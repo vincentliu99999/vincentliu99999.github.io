@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="https://vincentliu99999.github.io/"/>
+  <updated>2019-04-01T12:28:34.384Z</updated>
+  <id>https://vincentliu99999.github.io/</id>
+  
+  <author>
+    <name>Vincent Liu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初探 Hexo</title>
+    <link href="https://vincentliu99999.github.io/2018/09/19/hexo/"/>
+    <id>https://vincentliu99999.github.io/2018/09/19/hexo/</id>
+    <published>2018-09-19T15:33:58.000Z</published>
+    <updated>2019-04-01T12:28:34.384Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hexo-基本教學&quot;&gt;&lt;a href=&quot;#Hexo-基本教學&quot; class=&quot;headerlink&quot; title=&quot;Hexo 基本教學&quot;&gt;&lt;/a&gt;Hexo 基本教學&lt;/h1&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tutorial" scheme="https://vincentliu99999.github.io/tags/tutorial/"/>
+    
+      <category term="static site" scheme="https://vincentliu99999.github.io/tags/static-site/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Cheatsheet</title>
+    <link href="https://vincentliu99999.github.io/2018/09/12/markdowm/"/>
+    <id>https://vincentliu99999.github.io/2018/09/12/markdowm/</id>
+    <published>2018-09-11T17:22:02.000Z</published>
+    <updated>2019-04-01T12:28:34.384Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Markdown-常用格式&quot;&gt;&lt;a href=&quot;#Markdown-常用格式&quot; class=&quot;headerlink&quot; title=&quot;Markdown 常用格式&quot;&gt;&lt;/a&gt;Markdown 常用格式&lt;/h1&gt;&lt;h2 id=&quot;標題&quot;&gt;&lt;a href=&quot;#標題&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="cheatsheet" scheme="https://vincentliu99999.github.io/tags/cheatsheet/"/>
+    
+  </entry>
+  
+</feed>
