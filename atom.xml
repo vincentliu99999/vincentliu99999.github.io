@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vincentliu99999.github.io/"/>
-  <updated>2019-04-01T12:28:34.384Z</updated>
+  <updated>2019-04-09T13:03:52.723Z</updated>
   <id>https://vincentliu99999.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DynamoDB 資料匯出工具</title>
+    <link href="https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/"/>
+    <id>https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/</id>
+    <published>2019-04-09T12:54:24.000Z</published>
+    <updated>2019-04-09T13:03:52.723Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…&lt;br&gt;剛好找到了 &lt;a href=&quot;https://pypi.org/project/export-dynamodb/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="aws" scheme="https://vincentliu99999.github.io/categories/aws/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>初探 Hexo</title>
