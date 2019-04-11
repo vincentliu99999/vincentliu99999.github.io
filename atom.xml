@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vincentliu99999.github.io/"/>
-  <updated>2019-04-09T14:20:55.758Z</updated>
+  <updated>2019-04-11T17:36:05.597Z</updated>
   <id>https://vincentliu99999.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo 佈景主題</title>
-    <link href="https://vincentliu99999.github.io/2019/04/09/hexo-theme/"/>
-    <id>https://vincentliu99999.github.io/2019/04/09/hexo-theme/</id>
+    <title>Hexo - 靜態網頁框架</title>
+    <link href="https://vincentliu99999.github.io/2019/04/09/hexo-note/"/>
+    <id>https://vincentliu99999.github.io/2019/04/09/hexo-note/</id>
     <published>2019-04-09T14:10:54.000Z</published>
-    <updated>2019-04-09T14:20:55.758Z</updated>
+    <updated>2019-04-11T17:36:05.597Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h2 id=&quot;ICARUS&quot;&gt;&lt;a href=&quot;#ICARUS&quot; class=&quot;headerlink&quot; title=&quot;ICARUS&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/ppoffice/hexo-theme-icarus&quot;
+          &lt;h1 id=&quot;基本教學&quot;&gt;&lt;a href=&quot;#基本教學&quot; class=&quot;headerlink&quot; title=&quot;基本教學&quot;&gt;&lt;/a&gt;基本教學&lt;/h1&gt;&lt;p&gt;安裝需求: &lt;code&gt;Git&lt;/code&gt;, &lt;code&gt;Node&lt;/code&gt;&lt;/p&gt;
+&lt;figure
         
       
     
@@ -37,6 +38,8 @@
     
       <category term="static site generator" scheme="https://vincentliu99999.github.io/categories/static-site-generator/"/>
     
+    
+      <category term="markdown" scheme="https://vincentliu99999.github.io/tags/markdown/"/>
     
   </entry>
   
@@ -60,30 +63,6 @@
     </summary>
     
       <category term="aws" scheme="https://vincentliu99999.github.io/categories/aws/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>初探 Hexo</title>
-    <link href="https://vincentliu99999.github.io/2018/09/19/hexo/"/>
-    <id>https://vincentliu99999.github.io/2018/09/19/hexo/</id>
-    <published>2018-09-19T15:33:58.000Z</published>
-    <updated>2019-04-09T14:22:19.774Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;Hexo-基本教學&quot;&gt;&lt;a href=&quot;#Hexo-基本教學&quot; class=&quot;headerlink&quot; title=&quot;Hexo 基本教學&quot;&gt;&lt;/a&gt;Hexo 基本教學&lt;/h1&gt;&lt;figure class=&quot;highlight shell
-        
-      
-    
-    </summary>
-    
-      <category term="static site generator" scheme="https://vincentliu99999.github.io/categories/static-site-generator/"/>
     
     
   </entry>

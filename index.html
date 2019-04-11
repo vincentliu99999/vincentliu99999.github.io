@@ -144,7 +144,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    幾秒 閱讀文 (大約 24 個字)
+                    2 分鐘 閱讀文 (大約 351 個字)
                 </span>
                 
                 
@@ -153,17 +153,50 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/09/hexo-theme/">Hexo 佈景主題</a>
+                <a class="has-link-black-ter" href="/2019/04/09/hexo-note/">Hexo - 靜態網頁框架</a>
             
         </h1>
         <div class="content">
-            <h2 id="ICARUS"><a href="#ICARUS" class="headerlink" title="ICARUS"></a><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">ICARUS</a></h2><p>設定檔: <code>theme/icarus/_config.yml</code></p>
-<p>修改過的</p>
+            <h1 id="基本教學"><a href="#基本教學" class="headerlink" title="基本教學"></a>基本教學</h1><p>安裝需求: <code>Git</code>, <code>Node</code></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 安裝 Hexo</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 佈署</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="目錄及檔案"><a href="#目錄及檔案" class="headerlink" title="目錄及檔案"></a>目錄及檔案</h2><p><a href="https://hexo.io/zh-tw/docs/configuration" target="_blank" rel="noopener">配置</a></p>
+<ul>
+<li>_config.yml: 設定檔</li>
+<li>scaffolds: 樣板</li>
+<li>source: 文章<ul>
+<li>_draft: 草稿</li>
+<li>_post: 文章</li>
+</ul>
+</li>
+<li>themes: 主題</li>
+</ul>
+<h2 id="快速入門"><a href="#快速入門" class="headerlink" title="快速入門"></a>快速入門</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 初始化</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生文章</span><br><span class="line">hexo new 文章標題</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生靜態檔案</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 啟動伺服器 預設是 http://localhost:4000/</span><br><span class="line">hexo server # hexo s</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> publish</span><br><span class="line">hexo clean # 清除快取 db.json, /public/*</span><br><span class="line">hexo generate # hexo g</span><br><span class="line">hexo depoly # hexo d</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生檔案加佈署</span><br><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
+<li>設定檔 <code>new_post_name</code> 改為 <code>:year-:month-:day-:title.md</code> 比教方便管理</li>
+<li>layout: <code>post</code>, <code>page</code>, <code>draft</code>，另外可以在 <code>scaffolds</code> 目錄新增樣板，讓風格一致</li>
+<li><a href="https://hexo.io/zh-tw/docs/front-matter" target="_blank" rel="noopener">Front-matter</a><ul>
+<li>分類和標籤只有 <code>post</code> 可以使用</li>
+</ul>
+</li>
+<li><a href="https://hexo.io/zh-tw/docs/tag-plugins" target="_blank" rel="noopener">標籤外掛（Tag Plugins）</a>: 可插入特定內容，如：<code>jsFiddle</code>, <code>Gist</code> 等等</li>
+</ul>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new [layout] &lt;title&gt; &lt;scaffolds&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 發布草稿: 從 source/_drafts 移動到 source/_posts</span><br><span class="line">hexo publish [layout] &lt;title&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 查看整文章的數量: page, post, route, tag, category</span><br><span class="line">hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="佈署"><a href="#佈署" class="headerlink" title="佈署"></a>佈署</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>將產生在 <code>.deploy_git</code> 目錄下的檔案 force push 到設定檔指定的 repo</p>
+<figure class="highlight yaml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">deploy:</span></span><br><span class="line"><span class="hljs-attr">  type:</span> <span class="hljs-string">git</span></span><br><span class="line"><span class="hljs-attr">  repo:</span> <span class="hljs-string">git@github.com:vincentliu99999/vincentliu99999.github.io.git</span></span><br><span class="line"><span class="hljs-attr">  branch:</span> <span class="hljs-string">master</span></span><br><span class="line"><span class="hljs-attr">  message:</span> <span class="hljs-string">"Site updated: <span class="hljs-template-variable">&#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125;</span>"</span></span><br></pre></td></tr></table></figure>
+<h2 id="佈景主題"><a href="#佈景主題" class="headerlink" title="佈景主題"></a>佈景主題</h2><h3 id="ICARUS"><a href="#ICARUS" class="headerlink" title="ICARUS"></a><a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">ICARUS</a></h3><p>設定檔: <code>theme/icarus/_config.yml</code></p>
 <ul>
 <li>favicon</li>
 <li>rss</li>
 <li>logo</li>
+<li>navbar</li>
+<li>footer</li>
+<li>article.highlight</li>
 <li>article.thumbnail</li>
+<li>comment</li>
+<li>widgets<ul>
+<li>toc</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -212,84 +245,6 @@
             <p>由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…<br>剛好找到了 <a href="https://pypi.org/project/export-dynamodb/" target="_blank" rel="noopener">export-dynamodb</a></p>
 <p>可匯出格式: <code>CSV</code>, <code>JSON</code></p>
 <figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 未指定 output file name, 就會用 table name</span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json</span><br><span class="line"></span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv -o output.csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json -o output.json</span><br></pre></td></tr></table></figure>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-09-19T15:33:58.000Z">2018-09-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1 分鐘 閱讀文 (大約 163 個字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2018/09/19/hexo/">初探 Hexo</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Hexo-基本教學"><a href="#Hexo-基本教學" class="headerlink" title="Hexo 基本教學"></a>Hexo 基本教學</h1><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> windows 安裝 Node.js</span><br><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 安裝 Hexo</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo --save</span><br></pre></td></tr></table></figure>
-<h2 id="基礎使用"><a href="#基礎使用" class="headerlink" title="基礎使用"></a>基礎使用</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 初始化</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生靜態檔案</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 啟動伺服器 預設是 http://localhost:4000/</span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> publish</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo clean # 清除快取 db.json, /public/*</span><br><span class="line">hexo generate # hexo g</span><br><span class="line">hexo depoly # hexo d</span><br></pre></td></tr></table></figure>
-<ul>
-<li>_config.yml: 設定檔</li>
-<li>scaffolds: 樣板</li>
-<li>source: 文章</li>
-<li>themes: 主題</li>
-</ul>
-<h2 id="建立文章"><a href="#建立文章" class="headerlink" title="建立文章"></a>建立文章</h2><p>layout: <code>post</code>, <code>page</code>, <code>draft</code></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new [layout] &lt;title&gt; &lt;scaffolds&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 變更 layout</span><br><span class="line">hexo publish [layout] &lt;title&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Available types: page, post, route, tag, category</span><br><span class="line">hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="文章變數"><a href="#文章變數" class="headerlink" title="文章變數"></a>文章變數</h3><p>預設格式： <code>YAML</code></p>
-<p>預設變數</p>
-<table>
-<thead>
-<tr>
-<th>layout</th>
-<th>變數</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>draft</td>
-<td>title, tags</td>
-</tr>
-<tr>
-<td>page</td>
-<td>title, date</td>
-</tr>
-<tr>
-<td>post</td>
-<td>title, tags, date</td>
-</tr>
-</tbody>
-</table>
-
         </div>
         
         
@@ -395,7 +350,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        3
                     </p>
                 </div>
             </div>
@@ -415,7 +370,7 @@
                         標籤
                     </p>
                     <p class="title has-text-weight-normal">
-                        0
+                        1
                     </p>
                 </div>
             </div>
@@ -448,34 +403,6 @@
         
     
         
-
-<div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-        <h3 class="menu-label">
-            連結
-        </h3>
-        <ul class="menu-list">
-        
-            <li>
-                <a class="level is-mobile" href="https://hexo.io" target="_blank">
-                    <span class="level-left">
-                        <span class="level-item">Hexo</span>
-                    </span>
-                    <span class="level-right">
-                        <span class="level-item tag">hexo.io</span>
-                    </span>
-                </a>
-            </li>
-        
-        </ul>
-        </div>
-    </div>
-</div>
-
-
-    
-        
 <div class="card widget">
     <div class="card-content">
         <div class="menu">
@@ -505,7 +432,7 @@
                 <span class="level-item">static site generator</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a></li>
             </ul>
@@ -520,6 +447,13 @@
                 標籤
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/markdown/">
+                        <span class="tag">markdown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -541,7 +475,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-theme/" class="has-link-black-ter is-size-6">Hexo 佈景主題</a>
+                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -557,19 +491,6 @@
                     <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-19T15:33:58.000Z">2018-09-19</time></div>
-                    <a href="/2018/09/19/hexo/" class="has-link-black-ter is-size-6">初探 Hexo</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
                 </div>
             </div>
@@ -617,7 +538,7 @@
                     <span class="level-item">九月 2018</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -626,6 +547,34 @@
         </div>
     </div>
 </div>
+        
+            
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            連結
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
         
         </div>
     
@@ -650,7 +599,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-theme/" class="has-link-black-ter is-size-6">Hexo 佈景主題</a>
+                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -666,19 +615,6 @@
                     <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-19T15:33:58.000Z">2018-09-19</time></div>
-                    <a href="/2018/09/19/hexo/" class="has-link-black-ter is-size-6">初探 Hexo</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
                 </div>
             </div>
@@ -726,7 +662,7 @@
                     <span class="level-item">九月 2018</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
@@ -735,6 +671,34 @@
         </div>
     </div>
 </div>
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            連結
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://hexo.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Hexo</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hexo.io</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
     
     
 </div>
