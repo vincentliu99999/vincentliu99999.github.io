@@ -163,6 +163,29 @@
 
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">評論</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+	var gitment = new Gitment({
+		id: 'about/index.html',
+		owner: 'vincentliu99999',
+		repo: 'vincentliu99999.github.io',
+		oauth: {
+			client_id: '61cc7c7b1315827a4953',
+			client_secret: 'd1e2280db23c7742c7eb8b27099a391eb253e6f1',
+		},
+	})
+	gitment.render('comment-container')
+</script>
+
+    </div>
+</div>
 </div>
                 
 
