@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vincentliu99999.github.io/"/>
-  <updated>2019-04-16T01:38:49.853Z</updated>
+  <updated>2019-04-16T14:12:38.603Z</updated>
   <id>https://vincentliu99999.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Component 展開多個 Object</title>
-    <link href="https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/"/>
-    <id>https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/</id>
+    <title>React 筆記</title>
+    <link href="https://vincentliu99999.github.io/2019/04/16/react-note/"/>
+    <id>https://vincentliu99999.github.io/2019/04/16/react-note/</id>
     <published>2019-04-16T01:35:35.000Z</published>
-    <updated>2019-04-16T01:38:49.853Z</updated>
+    <updated>2019-04-16T14:12:38.603Z</updated>
     
     <summary type="html">
     
@@ -29,14 +29,12 @@
       
         
         
-          &lt;figure class=&quot;highlight javascript hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+          &lt;h2 id=&quot;Component-展開多個-Object&quot;&gt;&lt;a href=&quot;#Component-展開多個-Object&quot; class=&quot;headerlink&quot; title=&quot;Component 展開多個 Object&quot;&gt;&lt;/a&gt;Component 展開多個
         
       
     
     </summary>
     
-    
-      <category term="react" scheme="https://vincentliu99999.github.io/tags/react/"/>
     
   </entry>
   
@@ -45,7 +43,7 @@
     <link href="https://vincentliu99999.github.io/2019/04/09/hexo-note/"/>
     <id>https://vincentliu99999.github.io/2019/04/09/hexo-note/</id>
     <published>2019-04-09T14:10:54.000Z</published>
-    <updated>2019-04-13T06:26:50.852Z</updated>
+    <updated>2019-04-16T14:21:12.639Z</updated>
     
     <summary type="html">
     
@@ -53,8 +51,8 @@
       
         
         
-          &lt;h1 id=&quot;基本教學&quot;&gt;&lt;a href=&quot;#基本教學&quot; class=&quot;headerlink&quot; title=&quot;基本教學&quot;&gt;&lt;/a&gt;基本教學&lt;/h1&gt;&lt;p&gt;安裝需求: &lt;code&gt;Git&lt;/code&gt;, &lt;code&gt;Node&lt;/code&gt;&lt;/p&gt;
-&lt;figure
+          &lt;p&gt;安裝需求: &lt;code&gt;Git&lt;/code&gt;, &lt;code&gt;Node&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight shell hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
         
       
     
@@ -72,7 +70,7 @@
     <link href="https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/"/>
     <id>https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/</id>
     <published>2019-04-09T12:54:24.000Z</published>
-    <updated>2019-04-09T13:03:52.723Z</updated>
+    <updated>2019-04-16T13:59:59.277Z</updated>
     
     <summary type="html">
     
