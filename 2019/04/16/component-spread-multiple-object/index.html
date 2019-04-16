@@ -2,26 +2,31 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>分類: aws - Hexo</title>
+<title>Component 展開多個 Object - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://vincentliu99999.github.io/categories/aws/index.html">
+    <meta name="description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
+<meta name="keywords" content="react">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Component 展開多個 Object">
+<meta property="og:url" content="https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2019-04-16T01:38:49.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Component 展開多個 Object">
+<meta name="twitter:description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="Component 展開多個 Object" type="application/atom+xml">
 
 
 
@@ -91,7 +96,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                <img src="/images/light-bulb.png" alt="Component 展開多個 Object" height="28">
             
             </a>
         </div>
@@ -128,34 +133,18 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">分類</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">aws</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/aws/">aws</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    幾秒 閱讀文 (大約 90 個字)
+                    幾秒 閱讀文 (大約 1 個字)
                 </span>
                 
                 
@@ -164,13 +153,21 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/09/dynamodb-exporter/">DynamoDB 資料匯出工具</a>
+                Component 展開多個 Object
             
         </h1>
         <div class="content">
-            <p>由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…<br>剛好找到了 <a href="https://pypi.org/project/export-dynamodb/" target="_blank" rel="noopener">export-dynamodb</a></p>
-<p>可匯出格式: <code>CSV</code>, <code>JSON</code></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 未指定 output file name, 就會用 table name</span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json</span><br><span class="line"></span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv -o output.csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json -o output.json</span><br></pre></td></tr></table></figure>
+            <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;component &#123;...&#123; ...objA, ...objB &#125;&#125; /&gt;</span><br></pre></td></tr></table></figure>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/react/">react</a>
+                </div>
+            </div>
         </div>
         
         
@@ -182,9 +179,45 @@
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/09/hexo-note/">
+                <span class="level-item">Hexo - 靜態網頁框架</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">評論</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/';
+        this.page.identifier = '2019/04/16/component-spread-multiple-object/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'vincentliu' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
 </div>
                 
 
@@ -623,7 +656,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                    <img src="/images/light-bulb.png" alt="Component 展開多個 Object" height="28">
                 
                 </a>
                 <p class="is-size-7">
