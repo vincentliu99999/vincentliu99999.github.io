@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    幾秒 閱讀文 (大約 90 個字)
+                    幾秒 閱讀文 (大約 96 個字)
                 </span>
                 
                 
@@ -170,7 +170,7 @@
         <div class="content">
             <p>由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…<br>剛好找到了 <a href="https://pypi.org/project/export-dynamodb/" target="_blank" rel="noopener">export-dynamodb</a></p>
 <p>可匯出格式: <code>CSV</code>, <code>JSON</code></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 未指定 output file name, 就會用 table name</span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json</span><br><span class="line"></span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv -o output.csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json -o output.json</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 安裝</span><br><span class="line">pip install export-dynamodb</span><br><span class="line"><span class="hljs-meta">#</span> 未指定 output file name, 就會用 table name</span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json</span><br><span class="line"></span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv -o output.csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json -o output.json</span><br></pre></td></tr></table></figure>
         </div>
         
         
