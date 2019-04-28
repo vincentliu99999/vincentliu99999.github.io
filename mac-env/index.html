@@ -15,7 +15,7 @@
 <meta property="og:description" content="Homebrew12345# cli: brew install &amp;lt;package&amp;gt;# gui: brew cask install &amp;lt;package&amp;gt;brew install cloc git bat exa jq fdbrew cask install iterm2 eclipse-jee jd-gui  bat cat(1) with syntax highlight">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-26T17:40:50.208Z">
+<meta property="og:updated_time" content="2019-04-28T15:02:30.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 環境設定">
 <meta name="twitter:description" content="Homebrew12345# cli: brew install &amp;lt;package&amp;gt;# gui: brew cask install &amp;lt;package&amp;gt;brew install cloc git bat exa jq fdbrew cask install iterm2 eclipse-jee jd-gui  bat cat(1) with syntax highlight">
@@ -118,6 +118,10 @@
             <div class="navbar-end">
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜尋" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -148,8 +152,11 @@
 <li><a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener">jq</a> command-line JSON processor</li>
 <li><a href="https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md" target="_blank" rel="noopener">zsh-autosuggestions</a></li>
 </ul>
-<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><p><a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html" target="_blank" rel="noopener">JDK7</a> 要手動下載及安裝</p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/versions</span><br><span class="line">brew cask install java java6 java8</span><br><span class="line"></span><br><span class="line">ls /Library/Java/JavaVirtualMachines/</span><br><span class="line"><span class="hljs-meta">&gt;</span> 1.6.0.jdk        jdk1.7.0_80.jdk  jdk1.8.0_202.jdk openjdk-12.jdk</span><br><span class="line"></span><br><span class="line">/usr/libexec/java_home -V</span><br><span class="line"><span class="hljs-meta">&gt;</span> Matching Java Virtual Machines (5):</span><br><span class="line"><span class="hljs-meta">&gt;</span>    12, x86_64:	"OpenJDK 12"	/Library/Java/JavaVirtualMachines/openjdk-12.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.8.0_202, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.7.0_80, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.6.0_65-b14-468, x86_64:	"Java SE 6"	/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.6.0_65-b14-468, i386:	"Java SE 6"	/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 設定 ~/.zshrc</span><br><span class="line">export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)</span><br><span class="line">export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)</span><br><span class="line">export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)</span><br><span class="line">export JAVA_12_HOME=$(/usr/libexec/java_home -v12)</span><br><span class="line"></span><br><span class="line">alias java6='export JAVA_HOME=$JAVA_6_HOME'</span><br><span class="line">alias java7='export JAVA_HOME=$JAVA_7_HOME'</span><br><span class="line">alias java8='export JAVA_HOME=$JAVA_8_HOME'</span><br><span class="line">alias java12='export JAVA_HOME=$JAVA_12_HOME'</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> default to Java12</span><br><span class="line">java12</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> =============== 版本切換 ===============</span><br><span class="line">java6</span><br><span class="line">java -version</span><br><span class="line">java7</span><br><span class="line">java -version</span><br><span class="line">java8</span><br><span class="line">java -version</span><br><span class="line">java12</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><h3 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h3><p><a href="https://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html" target="_blank" rel="noopener">JDK7</a> 要手動下載及安裝</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">brew tap caskroom/versions</span><br><span class="line">brew cask install java java6 java8</span><br><span class="line"></span><br><span class="line">ls /Library/Java/JavaVirtualMachines/</span><br><span class="line"><span class="hljs-meta">&gt;</span> 1.6.0.jdk        jdk1.7.0_80.jdk  jdk1.8.0_202.jdk openjdk-12.jdk</span><br><span class="line"></span><br><span class="line">/usr/libexec/java_home -V</span><br><span class="line"><span class="hljs-meta">&gt;</span> Matching Java Virtual Machines (5):</span><br><span class="line"><span class="hljs-meta">&gt;</span>    12, x86_64:	"OpenJDK 12"	/Library/Java/JavaVirtualMachines/openjdk-12.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.8.0_202, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.7.0_80, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.6.0_65-b14-468, x86_64:	"Java SE 6"	/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"><span class="hljs-meta">&gt;</span>    1.6.0_65-b14-468, i386:	"Java SE 6"	/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 設定 ~/.zshrc</span><br><span class="line">export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)</span><br><span class="line">export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)</span><br><span class="line">export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)</span><br><span class="line">export JAVA_12_HOME=$(/usr/libexec/java_home -v12)</span><br><span class="line"></span><br><span class="line">alias java6='export JAVA_HOME=$JAVA_6_HOME'</span><br><span class="line">alias java7='export JAVA_HOME=$JAVA_7_HOME'</span><br><span class="line">alias java8='export JAVA_HOME=$JAVA_8_HOME'</span><br><span class="line">alias java12='export JAVA_HOME=$JAVA_12_HOME'</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> default to Java12</span><br><span class="line">java12</span><br></pre></td></tr></table></figure>
+<p>版本切換</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> =============== 版本切換 ===============</span><br><span class="line"></span><br><span class="line">java6</span><br><span class="line">java -version</span><br><span class="line">java7</span><br><span class="line">java -version</span><br><span class="line">java8</span><br><span class="line">java -version</span><br><span class="line">java12</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
+<h3 id="Mavan"><a href="#Mavan" class="headerlink" title="Mavan"></a>Mavan</h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install maven</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -280,6 +287,33 @@
 </div>
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                文章目錄
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Homebrew">
+        <span class="has-mr-6">1</span>
+        <span>Homebrew</span>
+        </a></li><li>
+        <a class="is-flex" href="#Java">
+        <span class="has-mr-6">2</span>
+        <span>Java</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#JDK">
+        <span class="has-mr-6">2.1</span>
+        <span>JDK</span>
+        </a></li><li>
+        <a class="is-flex" href="#Mavan">
+        <span class="has-mr-6">2.2</span>
+        <span>Mavan</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 <div class="card widget">
