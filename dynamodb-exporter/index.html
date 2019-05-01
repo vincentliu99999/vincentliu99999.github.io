@@ -2,31 +2,30 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Component 展開多個 Object - Hexo</title>
+<title>DynamoDB 資料匯出工具 - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
-<meta name="keywords" content="react">
+    <meta name="description" content="由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…剛好找到了 export-dynamodb 可匯出格式: CSV, JSON 12345678# 安裝pip install export-dynamodb# 未指定 output file name, 就會用 table nameexport-dynamodb -t TABLE_NAME -f csvexport">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Component 展開多個 Object">
-<meta property="og:url" content="https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/index.html">
+<meta property="og:title" content="DynamoDB 資料匯出工具">
+<meta property="og:url" content="https://vincentliu99999.github.io/dynamodb-exporter/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
+<meta property="og:description" content="由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…剛好找到了 export-dynamodb 可匯出格式: CSV, JSON 12345678# 安裝pip install export-dynamodb# 未指定 output file name, 就會用 table nameexport-dynamodb -t TABLE_NAME -f csvexport">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-16T01:38:49.853Z">
+<meta property="og:updated_time" content="2019-04-29T13:53:47.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Component 展開多個 Object">
-<meta name="twitter:description" content="1&amp;lt;component &amp;#123;...&amp;#123; ...objA, ...objB &amp;#125;&amp;#125; /&amp;gt;">
+<meta name="twitter:title" content="DynamoDB 資料匯出工具">
+<meta name="twitter:description" content="由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…剛好找到了 export-dynamodb 可匯出格式: CSV, JSON 12345678# 安裝pip install export-dynamodb# 未指定 output file name, 就會用 table nameexport-dynamodb -t TABLE_NAME -f csvexport">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Component 展開多個 Object" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="DynamoDB 資料匯出工具" type="application/atom+xml">
 
 
 
@@ -96,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Component 展開多個 Object" height="28">
+                <img src="/images/light-bulb.png" alt="DynamoDB 資料匯出工具" height="28">
             
             </a>
         </div>
@@ -138,13 +137,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time>
+                <time class="level-item has-text-grey" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/aws/">aws</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    幾秒 閱讀文 (大約 1 個字)
+                    幾秒 閱讀文 (大約 96 個字)
                 </span>
                 
                 
@@ -153,21 +156,13 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Component 展開多個 Object
+                DynamoDB 資料匯出工具
             
         </h1>
         <div class="content">
-            <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;component &#123;...&#123; ...objA, ...objB &#125;&#125; /&gt;</span><br></pre></td></tr></table></figure>
-
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/react/">react</a>
-                </div>
-            </div>
+            <p>由於 DynamoDB 僅提供匯出 CSV 的選項，但是編輯的時候只能用 JSON…<br>剛好找到了 <a href="https://pypi.org/project/export-dynamodb/" target="_blank" rel="noopener">export-dynamodb</a></p>
+<p>可匯出格式: <code>CSV</code>, <code>JSON</code></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 安裝</span><br><span class="line">pip install export-dynamodb</span><br><span class="line"><span class="hljs-meta">#</span> 未指定 output file name, 就會用 table name</span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json</span><br><span class="line"></span><br><span class="line">export-dynamodb -t TABLE_NAME -f csv -o output.csv</span><br><span class="line">export-dynamodb -t TABLE_NAME -f json -o output.json</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -182,10 +177,17 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/hexo-note/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Hexo - 靜態網頁框架</span>
+            </a>
+        </div>
+        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/09/hexo-note/">
-                <span class="level-item">Hexo - 靜態網頁框架</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/markdowm-cheatsheet/">
+                <span class="level-item">Markdown Cheatsheet</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -201,8 +203,8 @@
         
 <script>
     var disqus_config = function () {
-        this.page.url = 'https://vincentliu99999.github.io/2019/04/16/component-spread-multiple-object/';
-        this.page.identifier = '2019/04/16/component-spread-multiple-object/';
+        this.page.url = 'https://vincentliu99999.github.io/dynamodb-exporter/';
+        this.page.identifier = 'dynamodb-exporter/';
     };
     (function() {
         var d = document, s = d.createElement('script');  
@@ -261,7 +263,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -271,7 +273,7 @@
                         分類
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        4
                     </p>
                 </div>
             </div>
@@ -281,7 +283,7 @@
                         標籤
                     </p>
                     <p class="title has-text-weight-normal">
-                        2
+                        1
                     </p>
                 </div>
             </div>
@@ -312,8 +314,6 @@
 </div>
     
         
-    
-        
 <div class="card widget">
     <div class="card-content">
         <div class="menu">
@@ -333,6 +333,14 @@
         <a class="level is-marginless" href="/categories/documentation/">
             <span class="level-start">
                 <span class="level-item">documentation</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/handbook/">
+            <span class="level-start">
+                <span class="level-item">handbook</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -366,20 +374,15 @@
                     </a>
                 </div>
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/react/">
-                        <span class="tag">react</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
             </div>
         </div>
     </div>
 </div>
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
         
             
 <div class="card widget">
@@ -392,8 +395,21 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-01T12:18:26.000Z">2019-05-01</time></div>
+                    <a href="/git-handbook/" class="has-link-black-ter is-size-6">Git 手冊</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/handbook/">handbook</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/2019/04/16/component-spread-multiple-object/" class="has-link-black-ter is-size-6">Component 展開多個 Object</a>
+                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -406,7 +422,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
+                    <a href="/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -419,7 +435,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
+                    <a href="/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
                     </p>
@@ -432,7 +448,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-11T17:22:02.000Z">2018-09-12</time></div>
-                    <a href="/2018/09/12/markdowm/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
+                    <a href="/markdowm-cheatsheet/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/documentation/">documentation</a>
                     </p>
@@ -451,6 +467,17 @@
             彙整
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
@@ -516,7 +543,9 @@
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
     
         
 <div class="card widget">
@@ -529,8 +558,21 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-01T12:18:26.000Z">2019-05-01</time></div>
+                    <a href="/git-handbook/" class="has-link-black-ter is-size-6">Git 手冊</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/handbook/">handbook</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/2019/04/16/component-spread-multiple-object/" class="has-link-black-ter is-size-6">Component 展開多個 Object</a>
+                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -543,7 +585,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
+                    <a href="/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -556,7 +598,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
+                    <a href="/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
                     </p>
@@ -569,7 +611,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-11T17:22:02.000Z">2018-09-12</time></div>
-                    <a href="/2018/09/12/markdowm/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
+                    <a href="/markdowm-cheatsheet/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/documentation/">documentation</a>
                     </p>
@@ -588,6 +630,17 @@
             彙整
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
@@ -656,7 +709,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Component 展開多個 Object" height="28">
+                    <img src="/images/light-bulb.png" alt="DynamoDB 資料匯出工具" height="28">
                 
                 </a>
                 <p class="is-size-7">

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vincentliu99999.github.io/"/>
-  <updated>2019-04-16T14:12:38.603Z</updated>
+  <updated>2019-05-01T12:28:43.993Z</updated>
   <id>https://vincentliu99999.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git 手冊</title>
+    <link href="https://vincentliu99999.github.io/git-handbook/"/>
+    <id>https://vincentliu99999.github.io/git-handbook/</id>
+    <published>2019-05-01T12:18:26.000Z</published>
+    <updated>2019-05-01T12:28:43.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://ndpsoftware.com/git-cheatsheet.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NDP Software :: Git Cheatsheet&lt;/a&gt;&lt;/p&gt;
+&lt;!---
+todo
+
+*
+        
+      
+    
+    </summary>
+    
+      <category term="handbook" scheme="https://vincentliu99999.github.io/categories/handbook/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>React 筆記</title>
-    <link href="https://vincentliu99999.github.io/2019/04/16/react-note/"/>
-    <id>https://vincentliu99999.github.io/2019/04/16/react-note/</id>
+    <link href="https://vincentliu99999.github.io/react-note/"/>
+    <id>https://vincentliu99999.github.io/react-note/</id>
     <published>2019-04-16T01:35:35.000Z</published>
-    <updated>2019-04-16T14:12:38.603Z</updated>
+    <updated>2019-04-29T13:53:55.544Z</updated>
     
     <summary type="html">
     
@@ -40,10 +68,10 @@
   
   <entry>
     <title>Hexo - 靜態網頁框架</title>
-    <link href="https://vincentliu99999.github.io/2019/04/09/hexo-note/"/>
-    <id>https://vincentliu99999.github.io/2019/04/09/hexo-note/</id>
+    <link href="https://vincentliu99999.github.io/hexo-note/"/>
+    <id>https://vincentliu99999.github.io/hexo-note/</id>
     <published>2019-04-09T14:10:54.000Z</published>
-    <updated>2019-04-16T14:21:12.639Z</updated>
+    <updated>2019-04-29T13:54:00.753Z</updated>
     
     <summary type="html">
     
@@ -67,10 +95,10 @@
   
   <entry>
     <title>DynamoDB 資料匯出工具</title>
-    <link href="https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/"/>
-    <id>https://vincentliu99999.github.io/2019/04/09/dynamodb-exporter/</id>
+    <link href="https://vincentliu99999.github.io/dynamodb-exporter/"/>
+    <id>https://vincentliu99999.github.io/dynamodb-exporter/</id>
     <published>2019-04-09T12:54:24.000Z</published>
-    <updated>2019-04-26T17:27:33.830Z</updated>
+    <updated>2019-04-29T13:53:47.338Z</updated>
     
     <summary type="html">
     
@@ -91,10 +119,10 @@
   
   <entry>
     <title>Markdown Cheatsheet</title>
-    <link href="https://vincentliu99999.github.io/2018/09/12/markdowm/"/>
-    <id>https://vincentliu99999.github.io/2018/09/12/markdowm/</id>
+    <link href="https://vincentliu99999.github.io/markdowm-cheatsheet/"/>
+    <id>https://vincentliu99999.github.io/markdowm-cheatsheet/</id>
     <published>2018-09-11T17:22:02.000Z</published>
-    <updated>2019-04-26T17:28:39.686Z</updated>
+    <updated>2019-04-29T13:53:41.152Z</updated>
     
     <summary type="html">
     

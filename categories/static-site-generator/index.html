@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分鐘 閱讀文 (大約 359 個字)
+                    2 分鐘 閱讀文 (大約 372 個字)
                 </span>
                 
                 
@@ -164,7 +164,7 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/04/09/hexo-note/">Hexo - 靜態網頁框架</a>
+                <a class="has-link-black-ter" href="/hexo-note/">Hexo - 靜態網頁框架</a>
             
         </h1>
         <div class="content">
@@ -181,7 +181,6 @@
 </li>
 <li>themes: 主題</li>
 </ul>
-<h2 id="快速入門"><a href="#快速入門" class="headerlink" title="快速入門"></a>快速入門</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 初始化</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生文章</span><br><span class="line">hexo new 文章標題</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生靜態檔案</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 啟動伺服器 預設是 http://localhost:4000/</span><br><span class="line">hexo server # hexo s</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> publish</span><br><span class="line">hexo clean # 清除快取 db.json, /public/*</span><br><span class="line">hexo generate # hexo g</span><br><span class="line">hexo depoly # hexo d</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生檔案加佈署(任一指定即可)</span><br><span class="line">hexo generate --deploy # hexo g -d</span><br><span class="line">hexo deploy --generate # hexo d -g</span><br></pre></td></tr></table></figure>
 <h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><ul>
 <li>設定檔 <code>new_post_name</code> 改為 <code>:year-:month-:day-:title.md</code> 比教方便管理</li>
 <li>layout: <code>post</code>, <code>page</code>, <code>draft</code>，另外可以在 <code>scaffolds</code> 目錄新增樣板，讓風格一致</li>
@@ -209,7 +208,7 @@
 </ul>
 </li>
 </ul>
-
+<h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a><a href="https://hexo.io/zh-tw/docs/commands.html" target="_blank" rel="noopener">指令</a></h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> 初始化</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生文章</span><br><span class="line">hexo new 文章標題</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生靜態檔案</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 啟動伺服器 預設是 http://localhost:4000/</span><br><span class="line">hexo server # hexo s</span><br><span class="line">hexo s --draft # 包含草稿</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> publish</span><br><span class="line">hexo clean # 清除快取 db.json, /public/*</span><br><span class="line">hexo generate # hexo g</span><br><span class="line">hexo depoly # hexo d</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 產生檔案加佈署(任一指定即可)</span><br><span class="line">hexo generate --deploy # hexo g -d</span><br><span class="line">hexo deploy --generate # hexo d -g</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -267,7 +266,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -277,7 +276,7 @@
                         分類
                     </p>
                     <p class="title has-text-weight-normal">
-                        3
+                        4
                     </p>
                 </div>
             </div>
@@ -318,8 +317,6 @@
 </div>
     
         
-    
-        
 <div class="card widget">
     <div class="card-content">
         <div class="menu">
@@ -339,6 +336,14 @@
         <a class="level is-marginless" href="/categories/documentation/">
             <span class="level-start">
                 <span class="level-item">documentation</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/handbook/">
+            <span class="level-start">
+                <span class="level-item">handbook</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -378,7 +383,9 @@
 </div>
     
     
-        <div class="column-right-shadow is-hidden-widescreen ">
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
         
             
 <div class="card widget">
@@ -391,8 +398,21 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-01T12:18:26.000Z">2019-05-01</time></div>
+                    <a href="/git-handbook/" class="has-link-black-ter is-size-6">Git 手冊</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/handbook/">handbook</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/2019/04/16/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
+                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -405,7 +425,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
+                    <a href="/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -418,7 +438,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
+                    <a href="/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
                     </p>
@@ -431,7 +451,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-11T17:22:02.000Z">2018-09-12</time></div>
-                    <a href="/2018/09/12/markdowm/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
+                    <a href="/markdowm-cheatsheet/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/documentation/">documentation</a>
                     </p>
@@ -450,6 +470,17 @@
             彙整
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
@@ -515,7 +546,9 @@
 
 
 
-<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
     
         
 <div class="card widget">
@@ -528,8 +561,21 @@
             
             <div class="media-content">
                 <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-01T12:18:26.000Z">2019-05-01</time></div>
+                    <a href="/git-handbook/" class="has-link-black-ter is-size-6">Git 手冊</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/handbook/">handbook</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/2019/04/16/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
+                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -542,7 +588,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T14:10:54.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
+                    <a href="/hexo-note/" class="has-link-black-ter is-size-6">Hexo - 靜態網頁框架</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/static-site-generator/">static site generator</a>
                     </p>
@@ -555,7 +601,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-09T12:54:24.000Z">2019-04-09</time></div>
-                    <a href="/2019/04/09/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
+                    <a href="/dynamodb-exporter/" class="has-link-black-ter is-size-6">DynamoDB 資料匯出工具</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/aws/">aws</a>
                     </p>
@@ -568,7 +614,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2018-09-11T17:22:02.000Z">2018-09-12</time></div>
-                    <a href="/2018/09/12/markdowm/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
+                    <a href="/markdowm-cheatsheet/" class="has-link-black-ter is-size-6">Markdown Cheatsheet</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/documentation/">documentation</a>
                     </p>
@@ -587,6 +633,17 @@
             彙整
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
