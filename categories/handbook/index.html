@@ -105,6 +105,8 @@
                 
                 <a class="navbar-item" href="/categories">Categories</a>
                 
+                <a class="navbar-item" href="/tools">Toolbox</a>
+                
                 <a class="navbar-item" href="/tags">Tags</a>
                 
                 <a class="navbar-item" href="/about">About</a>
@@ -155,7 +157,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 分鐘 閱讀文 (大約 962 個字)
+                    7 分鐘 閱讀文 (大約 1024 個字)
                 </span>
                 
                 
@@ -192,6 +194,7 @@ todo
 <figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">git branch -l</span><br><span class="line">git branch -r</span><br><span class="line">git branch -v</span><br><span class="line">git branch -vv</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 建立分支</span><br><span class="line">git branch &lt;newbranchname&gt;</span><br><span class="line">git checkout -b &lt;newbranchname&gt; # 等同 git branch &lt;newbranchname&gt; &amp;&amp; git checkout &lt;newbranchname&gt;</span><br><span class="line"><span class="hljs-meta">#</span> 建立分支 - 針對節點</span><br><span class="line">git branch &lt;newbranchname&gt; &lt;object&gt;</span><br><span class="line">git checkout -b &lt;newbranchname&gt; &lt;object&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 切換分支</span><br><span class="line">git branch &lt;branchname&gt;</span><br><span class="line">git checkout &lt;branchname&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 合併分支</span><br><span class="line">git merge &lt;branchname&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 刪除分支</span><br><span class="line">git branch -d &lt;branchname&gt; # --delete</span><br><span class="line">git branch -D &lt;branchname&gt; # 強制刪除 --delete --force</span><br><span class="line"></span><br><span class="line">git branch --merged</span><br><span class="line">git branch --no-merged</span><br><span class="line">git branch --no-merged master</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> remote</span><br><span class="line">git ls-remote [remote]</span><br><span class="line">git remote show [remote]</span><br><span class="line">git fetch &lt;remote&gt;</span><br><span class="line">git remote add</span><br><span class="line">git push &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"><span class="hljs-meta">#</span> tracking</span><br><span class="line">git checkout -b &lt;branch&gt; &lt;remote&gt;/&lt;branch&gt; # or git checkout serverfix</span><br><span class="line">git branch -u origin/serverfix</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> pulling</span><br><span class="line">git pull # git fetch &amp;&amp; git merge</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span># delete remote branch</span><br><span class="line">git push origin --delete serverfix</span><br></pre></td></tr></table></figure>
 <h3 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a><a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing" target="_blank" rel="noopener">Rebase</a></h3><p>不要 rebase 其他人正在進行的 branch</p>
 <figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;branchname&gt;</span><br><span class="line">git rebase master</span><br><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</span><br><span class="line">git pull --rebase</span><br></pre></td></tr></table></figure>
+<h3 id="Git-Branching-Remote"><a href="#Git-Branching-Remote" class="headerlink" title="Git Branching - Remote"></a><a href="https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches" target="_blank" rel="noopener">Git Branching - Remote</a></h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> push</span><br><span class="line">git push origin serverfix</span><br><span class="line">git fetch origin</span><br><span class="line">git checkout -b serverfix origin/serverfix</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> track</span><br><span class="line">git checkout --track origin/serverfix</span><br><span class="line">git checkout serverfix</span><br><span class="line">git checkout -b sf origin/serverfix</span><br><span class="line">git branch -vv</span><br><span class="line">git fetch --all; git branch -vv</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> pull</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> delete</span><br><span class="line">git push origin --delete serverfix</span><br></pre></td></tr></table></figure>
 <h2 id="Git-on-the-Server"><a href="#Git-on-the-Server" class="headerlink" title="Git on the Server"></a><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols" target="_blank" rel="noopener">Git on the Server</a></h2><p><a href="https://git.wiki.kernel.org/index.php/GitHosting" target="_blank" rel="noopener">Hosting</a></p>
 <figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> remote 操作</span><br><span class="line">git clone git@github.com:[username]/[repo].git</span><br><span class="line">git push -u</span><br><span class="line">git remote add [name] git@github.com:[username]/[repo].git</span><br><span class="line"></span><br><span class="line">git remote</span><br><span class="line">git remote -v</span><br><span class="line">git remote show origin</span><br><span class="line">git pull [name]</span><br><span class="line">git remote rm [name]</span><br></pre></td></tr></table></figure>
 <h3 id="產生-SSH-Public-Key"><a href="#產生-SSH-Public-Key" class="headerlink" title="產生 SSH Public Key"></a>產生 SSH Public Key</h3><ul>
@@ -415,7 +418,7 @@ todo
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
+                    <a href="/react-handbook/" class="has-link-black-ter is-size-6">React 手冊</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -523,6 +526,17 @@ todo
         <ul class="menu-list">
         
             <li>
+                <a class="level is-mobile" href="https://vincentliu99999.github.io/wiki/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Wiki</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">vincentliu99999.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
                 <a class="level is-mobile" href="https://hexo.io" target="_blank">
                     <span class="level-left">
                         <span class="level-item">Hexo</span>
@@ -578,7 +592,7 @@ todo
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-16T01:35:35.000Z">2019-04-16</time></div>
-                    <a href="/react-note/" class="has-link-black-ter is-size-6">React 筆記</a>
+                    <a href="/react-handbook/" class="has-link-black-ter is-size-6">React 手冊</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -684,6 +698,17 @@ todo
             連結
         </h3>
         <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://vincentliu99999.github.io/wiki/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Wiki</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">vincentliu99999.github.io</span>
+                    </span>
+                </a>
+            </li>
         
             <li>
                 <a class="level is-mobile" href="https://hexo.io" target="_blank">
