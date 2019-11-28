@@ -8,6 +8,7 @@
 
 
     <meta name="description" content="最近遇到機器重啟後，email 發送亂碼的問題 經查詢後發現是因為該機器是 zh_TW.big5 語系，有人本機設定語系為 zh_TW.UTF-8，使用 sudo s- 進入後重啟所導致 以下方法可以不把本機語系傳到遠端 1vi /etc/ssh/ssh_config 註解以下設定 SendEnv LANG LC_* 測試流程: 設定本機語系後，ssh 至 remote，再看看語系設定 1234#">
+<meta name="keywords" content="SSH">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH 不帶入本機語系設定">
 <meta property="og:url" content="https://vincentliu99999.github.io/ssh-forward-locale-setting/index.html">
@@ -15,7 +16,7 @@
 <meta property="og:description" content="最近遇到機器重啟後，email 發送亂碼的問題 經查詢後發現是因為該機器是 zh_TW.big5 語系，有人本機設定語系為 zh_TW.UTF-8，使用 sudo s- 進入後重啟所導致 以下方法可以不把本機語系傳到遠端 1vi /etc/ssh/ssh_config 註解以下設定 SendEnv LANG LC_* 測試流程: 設定本機語系後，ssh 至 remote，再看看語系設定 1234#">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-11-28T03:00:11.892Z">
+<meta property="og:updated_time" content="2019-11-28T03:17:24.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH 不帶入本機語系設定">
 <meta name="twitter:description" content="最近遇到機器重啟後，email 發送亂碼的問題 經查詢後發現是因為該機器是 zh_TW.big5 語系，有人本機設定語系為 zh_TW.UTF-8，使用 sudo s- 進入後重啟所導致 以下方法可以不把本機語系傳到遠端 1vi /etc/ssh/ssh_config 註解以下設定 SendEnv LANG LC_* 測試流程: 設定本機語系後，ssh 至 remote，再看看語系設定 1234#">
@@ -171,7 +172,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分鐘 閱讀文 (大約 234 個字)
+                    2 分鐘 閱讀文 (大約 248 個字)
                 </span>
                 
                 
@@ -197,9 +198,18 @@
 <ul>
 <li><a href="https://stackoverflow.com/questions/29609371/how-do-not-pass-locale-through-ssh" target="_blank" rel="noopener">How do not pass locale through ssh</a></li>
 <li><a href="https://www.cyberciti.biz/faq/os-x-terminal-bash-warning-setlocale-lc_ctype-cannot-change-locale/" target="_blank" rel="noopener">OS X Terminal: -bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory Fix</a></li>
-<li><a href="https://www.linuxbabe.com/linux-server/fix-ssh-locale-environment-variable-error" target="_blank" rel="noopener">3 Ways to Fix SSH Locale Environment Variable Error</a></li>
+<li><a href="https://www.linuxbabe.com/linux-server/fix-ssh-locale-environment-variable-error" target="_blank" rel="noopener">3 Ways to Fix SSH Locale Environment Variable Error</a> 如果你要一台一台更新機器的話…</li>
 </ul>
 
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/SSH/">SSH</a>
+                </div>
+            </div>
         </div>
         
         
@@ -313,7 +323,7 @@
                         標籤
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -396,6 +406,13 @@
                 標籤
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/SSH/">
+                        <span class="tag">SSH</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/markdown/">
