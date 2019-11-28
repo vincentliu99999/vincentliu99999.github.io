@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vincentliu99999.github.io/"/>
-  <updated>2019-05-06T05:19:07.420Z</updated>
+  <updated>2019-11-28T03:00:11.892Z</updated>
   <id>https://vincentliu99999.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>SSH 不帶入本機語系設定</title>
+    <link href="https://vincentliu99999.github.io/ssh-forward-locale-setting/"/>
+    <id>https://vincentliu99999.github.io/ssh-forward-locale-setting/</id>
+    <published>2019-11-28T02:45:21.000Z</published>
+    <updated>2019-11-28T03:00:11.892Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近遇到機器重啟後，email 發送亂碼的問題&lt;/p&gt;
+&lt;p&gt;經查詢後發現是因為該機器是 &lt;code&gt;zh_TW.big5&lt;/code&gt; 語系，有人本機設定語系為 &lt;code&gt;zh_TW.UTF-8&lt;/code&gt;，使用 &lt;code&gt;sudo s-&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Git 手冊</title>
     <link href="https://vincentliu99999.github.io/git-handbook/"/>
     <id>https://vincentliu99999.github.io/git-handbook/</id>
     <published>2019-05-01T12:18:26.000Z</published>
-    <updated>2019-05-06T05:19:07.420Z</updated>
+    <updated>2019-07-24T14:41:43.689Z</updated>
     
     <summary type="html">
     
