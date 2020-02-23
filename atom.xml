@@ -39,6 +39,32 @@
   </entry>
   
   <entry>
+    <title>serverless-aws-handbook</title>
+    <link href="https://vincentliu99999.github.io/serverless-aws-handbook/"/>
+    <id>https://vincentliu99999.github.io/serverless-aws-handbook/</id>
+    <published>2020-01-02T03:10:35.940Z</published>
+    <updated>2020-02-23T05:55:54.598Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;整理 serverless 運用 &lt;a href=&quot;https://serverless.com/framework/docs/providers/aws/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AWS Provider&lt;/a&gt; 開發
+        
+      
+    
+    </summary>
+    
+      <category term="aws" scheme="https://vincentliu99999.github.io/categories/aws/"/>
+    
+    
+      <category term="lambda" scheme="https://vincentliu99999.github.io/tags/lambda/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSH 不帶入本機語系設定</title>
     <link href="https://vincentliu99999.github.io/ssh-forward-locale-setting/"/>
     <id>https://vincentliu99999.github.io/ssh-forward-locale-setting/</id>

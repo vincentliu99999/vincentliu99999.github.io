@@ -2,30 +2,26 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>教學文件 - Hexo</title>
+<title>標籤: lambda - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="training repo 2019 Markdown 教學, slide Twilio Chat, slide React 教學, slide  2018 VSCode 教學, slide">
-<meta property="og:type" content="website">
-<meta property="og:title" content="教學文件">
-<meta property="og:url" content="https://vincentliu99999.github.io/training/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://vincentliu99999.github.io/tags/lambda/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="training repo 2019 Markdown 教學, slide Twilio Chat, slide React 教學, slide  2018 VSCode 教學, slide">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2020-01-04T06:06:42.090Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="教學文件">
-<meta name="twitter:description" content="training repo 2019 Markdown 教學, slide Twilio Chat, slide React 教學, slide  2018 VSCode 教學, slide">
+<meta name="twitter:title" content="Hexo">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="教學文件" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
 
 
 
@@ -115,7 +111,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="教學文件" height="28">
+                <img src="/images/light-bulb.png" alt="Hexo" height="28">
             
             </a>
         </div>
@@ -131,7 +127,7 @@
                 
                 <a class="navbar-item" href="/tools">Toolbox</a>
                 
-                <a class="navbar-item is-active" href="/training">Training</a>
+                <a class="navbar-item" href="/training">Training</a>
                 
                 <a class="navbar-item" href="/tags">Tags</a>
                 
@@ -141,10 +137,6 @@
             
             <div class="navbar-end">
                 
-                
-                <a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
                 
                 
                 <a class="navbar-item search" title="搜尋" href="javascript:;">
@@ -160,24 +152,204 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">標籤</a></li>
+            <li class="is-active"><a href="#" aria-current="page">lambda</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-content article ">
         
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-01-02T03:10:35.940Z">2020-01-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/aws/">aws</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 分鐘 閱讀文 (大約 1184 個字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                教學文件
+                <a class="has-link-black-ter" href="/serverless-aws-handbook/">serverless-aws-handbook</a>
             
         </h1>
         <div class="content">
-            <p><a href="https://github.com/vincentliu99999/training" target="_blank" rel="noopener">training repo</a></p>
-<h2 id="2019"><a href="#2019" class="headerlink" title="2019"></a>2019</h2><ol>
-<li><a href="https://github.com/vincentliu99999/markdown-tutorial" target="_blank" rel="noopener">Markdown 教學</a>, <a href="http://bit.ly/markdown-tutorial" target="_blank" rel="noopener">slide</a></li>
-<li><a href="https://github.com/vincentliu99999/twilio-chat-tutorial" target="_blank" rel="noopener">Twilio Chat</a>, <a href="http://bit.ly/twilio-gslide" target="_blank" rel="noopener">slide</a></li>
-<li><a href="https://github.com/vincentliu99999/react-practice" target="_blank" rel="noopener">React 教學</a>, <a href="http://bit.ly/react-intro-101" target="_blank" rel="noopener">slide</a></li>
+            <p>整理 serverless 運用 <a href="https://serverless.com/framework/docs/providers/aws/" target="_blank" rel="noopener">AWS Provider</a> 開發 Lambda</p>
+<h2 id="環境準備-amp-介紹"><a href="#環境準備-amp-介紹" class="headerlink" title="環境準備&amp;介紹"></a>環境準備&amp;介紹</h2><ul>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/installation/" target="_blank" rel="noopener">AWS - Installation</a><ol>
+<li>安裝 <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a></li>
+<li>安裝 Serverless <code>npm install -g serverless</code></li>
+<li>設定 AWS credentials</li>
 </ol>
-<h2 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h2><ol>
-<li><a href="https://github.com/vincentliu99999/vscode-tutorial" target="_blank" rel="noopener">VSCode 教學</a>, <a href="http://bit.ly/vscode-tutorial" target="_blank" rel="noopener">slide</a></li>
-</ol>
+</li>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/intro/" target="_blank" rel="noopener">AWS - Introduction</a><ul>
+<li>協助開發、部署 Lambda</li>
+<li>管理 code, infrastructure by CloudFormation</li>
+<li>支援多種程式語言</li>
+<li>主要概念<ul>
+<li>functions: AWS Lambda function</li>
+<li>events: 用來 trigger Lambda</li>
+<li>resources: Lambda 所需的 infrastructure</li>
+<li>services: project 單位</li>
+<li>plugins</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/#serverlessyml-reference" target="_blank" rel="noopener">serverless.yml</a> 可用的屬性</li>
+</ul>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p><a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html</a></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">npm install serverless -g</span><br><span class="line">sls --version</span><br><span class="line"></span><br><span class="line">sls create --template hello-world</span><br><span class="line"></span><br><span class="line">npm install serverless-offline -D</span><br><span class="line">sls offline</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Invoke</span><br><span class="line"><span class="hljs-meta">#</span> Remote</span><br><span class="line">serverless invoke --function=helloWorld --log</span><br><span class="line">sls invoke -f helloWorld</span><br><span class="line">sls invoke -f getInstanceByTag # You are not authorized to perform this operation.</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Local</span><br><span class="line">serverless invoke local --function=helloWorld --log</span><br><span class="line">sls invoke local -f helloWorld</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Remove</span><br><span class="line">sls remove</span><br><span class="line">sls remove --stage dev --region us-east-1</span><br></pre></td></tr></table></figure>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a><a href="https://serverless.com/framework/docs/getting-started/" target="_blank" rel="noopener">Install</a></h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> macOS &amp; Linux</span><br><span class="line">curl -o- -L https://slss.io/install | bash</span><br><span class="line">serverless upgrade</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> npm</span><br><span class="line">npm install -g serverless</span><br><span class="line">npm update -g serverless</span><br></pre></td></tr></table></figure>
+<h2 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/" target="_blank" rel="noopener">User Guide</a></h2><h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/functions/" target="_blank" rel="noopener">Functions</a></h3><ul>
+<li><code>handler</code> 指向檔案及 module</li>
+<li>function 預設繼承 provider 屬性或是自行指定</li>
+<li>function 可用 array file 來分別管理</li>
+<li>Permission<ul>
+<li>利用 <code>provider.iamRoleStatements</code> 設定 IAM Role</li>
+<li>使用現有 IAM Role <code>provider.role</code></li>
+</ul>
+</li>
+<li>Environment Variables<ul>
+<li>key-value paris<ul>
+<li>function, override provider</li>
+<li>provider</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tags<ul>
+<li>key/value tags<ul>
+<li>function, override provider</li>
+<li>provider</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/variables/" target="_blank" rel="noopener">Variables</a></h3><ul>
+<li>取代 <code>serverless.yml</code> 中的設定值，例如提供 secrets, 運用 multiple stage，<a href="https://serverless.com/framework/docs/providers/aws/guide/variables/#syntax" target="_blank" rel="noopener">語法</a> 如 <code>${variableSource}</code></li>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/variables#current-variable-sources" target="_blank" rel="noopener">變數來源</a><ul>
+<li>Serverless <code>{sls:variableSource}</code></li>
+<li>環境變數 <code>${env:SOME_VAR}</code></li>
+<li>CLI Options <code>${opt:some_option}</code></li>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/variables/#reference-variables-in-other-files" target="_blank" rel="noopener">外部檔案</a> YAML, JSON file</li>
+<li>SSM Parameter Store: <code>${ssm:/path/to/param}</code></li>
+<li>Secrets Manager</li>
+<li>參照 <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html" target="_blank" rel="noopener">AWS Pseudo Parameters</a></li>
+<li><a href="https://serverless.com/framework/docs/providers/aws/guide/variables/#read-string-variable-values-as-boolean-values" target="_blank" rel="noopener">字串變數作為布林值</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Credentials"><a href="#Credentials" class="headerlink" title="Credentials"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/credentials/" target="_blank" rel="noopener">Credentials</a></h3><ul>
+<li>serverless 需要能 access AWS resource 的權限，已進行操作管理</li>
+<li>註冊 AWS Account(<del>廢話</del>)</li>
+<li>建立 IAM user, access key，啟用 <strong>Programmatic access</strong><ul>
+<li>Serverless Framework Dashboard，運用 AWS Access Roles 並使用 1 小時後就失效的 access key</li>
+<li>無腦方式直接賦予 IAM user <strong>AdministratorAccess</strong> 權限</li>
+<li>最小權限化可參考 <a href="https://gist.github.com/ServerlessBot/7618156b8671840a539f405dea2704c8" target="_blank" rel="noopener">gist</a></li>
+</ul>
+</li>
+<li>使用 access key<ul>
+<li>export AWS_ACCESS_KEY_ID, export AWS_SECRET_ACCESS_KEY</li>
+<li>AWS Profiles<ul>
+<li><code>serverless config credentials</code></li>
+<li><a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" target="_blank" rel="noopener">aws-cli</a> <code>aws configure</code> 會以 INI 格式儲存在 <code>~/.aws/credentials</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="IAM"><a href="#IAM" class="headerlink" title="IAM"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/iam/" target="_blank" rel="noopener">IAM</a></h3><p>Serverless 會自動建立 所有 function 共用的 IAM Role，可自行修改或建立 function 獨立用的 IAM Role</p>
+<h4 id="The-Default-IAM-Role"><a href="#The-Default-IAM-Role" class="headerlink" title="The Default IAM Role"></a>The Default IAM Role</h4><ul>
+<li>create, write CloudWatch logs</li>
+<li>VPC 有設定時，就能跟 VPC 內的 resource 都通</li>
+<li>所有 service 共用的 role 設定在 <code>provider.iamRoleStatements</code> 或 <code>provider.iamManagedPolicies</code></li>
+<li>可用運 CloudFormation 語法</li>
+</ul>
+<h4 id="Custom-IAM-Roles"><a href="#Custom-IAM-Roles" class="headerlink" title="Custom IAM Roles"></a>Custom IAM Roles</h4><ul>
+<li>provider 定義的 <code>iamRoleStatements</code> 不再使用</li>
+<li>自定義的 role 可用用在 provider 或個別 function<ul>
+<li>function 沒定義 <code>role</code> 時，會使用 <code>provider.role</code></li>
+<li>function 有定義 <code>role</code> 時，會覆寫 <code>provider.role</code></li>
+<li>每個 function 都有指定 <code>role</code> 時，預設的 role, policy 將不會產生</li>
+</ul>
+</li>
+</ul>
+<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/deploying/" target="_blank" rel="noopener">Deploy</a></h3><h4 id="Deploy-All"><a href="#Deploy-All" class="headerlink" title="Deploy All"></a>Deploy All</h4><p>update function by <code>serverless.yml</code>, translate syntax to CloudFormation</p>
+<ul>
+<li>建立 CloudFormation template</li>
+<li>建立 S3 Bucket, 預設 AES256 encryption</li>
+<li>function code package to zip files</li>
+<li>比對檔案 hash, 有不同才會進行 deploy</li>
+<li>zip file 上傳到 S3 Bucket</li>
+<li>建立 CloudFormation 所需 resources</li>
+<li>更新 CloudFormation stack</li>
+<li>發布新版的 function</li>
+</ul>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> default stage: dev</span><br><span class="line"><span class="hljs-meta">#</span> speed up option --aws-s3-accelerate</span><br><span class="line">sls deploy --verbose</span><br><span class="line">sls deploy --aws-s3-accelerate --verbose</span><br><span class="line">sls deploy --stage production --region eu-central-1</span><br></pre></td></tr></table></figure>
+<h4 id="Deploy-Function"><a href="#Deploy-Function" class="headerlink" title="Deploy Function"></a>Deploy Function</h4><p>因不仰賴 CloudFormation，較為快速</p>
+<ul>
+<li>package function into zip file</li>
+<li>比對檔案 hash, 有不同才會進行 deploy</li>
+<li>zip file 上傳到 CloudFormation stack  指定的 S3 Bucket</li>
+</ul>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serverless deploy function --function helloWorld</span><br></pre></td></tr></table></figure>
+<h2 id="AWS-Events"><a href="#AWS-Events" class="headerlink" title="AWS Events"></a><a href="https://serverless.com/framework/docs/providers/aws/events/" target="_blank" rel="noopener">AWS Events</a></h2><h3 id="Schedule"><a href="#Schedule" class="headerlink" title="Schedule"></a><a href="https://serverless.com/framework/docs/providers/aws/events/schedule/" target="_blank" rel="noopener">Schedule</a></h3><ul>
+<li>語法可參閱 <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html" target="_blank" rel="noopener">Schedule Expressions for Rules</a><ul>
+<li><code>corn</code></li>
+<li><code>rate</code></li>
+</ul>
+</li>
+<li>預設 enable</li>
+<li>可給予 name, description</li>
+</ul>
+<h3 id="SNS"><a href="#SNS" class="headerlink" title="SNS"></a><a href="https://serverless.com/framework/docs/providers/aws/events/sns/" target="_blank" rel="noopener">SNS</a></h3><ul>
+<li>lambda 會在訊息傳到 topic 後呼叫</li>
+<li>可在不同 function 使用相同 topic</li>
+<li>用 ARN 指定現有 topic，可運用 CloudFormation function 組合</li>
+<li>topic 在 <code>serverless.yml</code> 中時，要用 <code>Fn::Ref</code> 或 <code>!Ref</code> 取得 ARN</li>
+</ul>
+<h3 id="DynamoDB-Streams"><a href="#DynamoDB-Streams" class="headerlink" title="DynamoDB Streams"></a><a href="https://serverless.com/framework/docs/providers/aws/events/streams/" target="_blank" rel="noopener">DynamoDB Streams</a></h3><ul>
+<li>table 資料新增、修改時，觸發 lambda</li>
+<li><code>stream</code> 僅會掛上已存在的 stream，serverless 不會新增新的 stream</li>
+<li>設定<ul>
+<li><code>batchSize</code></li>
+<li><code>startingPosition</code></li>
+<li><code>batchWindow</code></li>
+<li><code>maximumRetryAttempts</code></li>
+<li><code>parallelizationFactor</code></li>
+<li><code>enable</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="CLI"><a href="#CLI" class="headerlink" title="CLI"></a><a href="https://serverless.com/framework/docs/providers/aws/cli-reference/" target="_blank" rel="noopener">CLI</a></h2><ul>
+<li><a href="https://serverless.com/framework/docs/providers/aws/cli-reference/deploy/" target="_blank" rel="noopener">AWS - deploy</a></li>
+</ul>
+<h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><p><code>nodejs, python, python3, java</code></p>
+<p><a href="https://serverless.com/framework/docs/providers/aws/cli-reference/create/#available-templates" target="_blank" rel="noopener">Templates</a></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> create service in current directory</span><br><span class="line">serverless create --template aws-nodejs --name my-special-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create service in new directory</span><br><span class="line">serverless create --template aws-nodejs --path my-new-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create service using local template</span><br><span class="line">serverless create --template-path path/to/my/template/folder --path path/to/my/service --name my-new-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create plugin</span><br><span class="line">serverless create --template plugin</span><br></pre></td></tr></table></figure>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><a href="https://github.com/serverless/serverless/issues/3323" target="_blank" rel="noopener">Having an event only for prod stage</a></li>
+<li><a href="https://github.com/serverless/examples" target="_blank" rel="noopener">serverless/examples</a></li>
+</ul>
 
         </div>
         
@@ -192,29 +364,7 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">評論</h3>
-        
-<script>
-    var disqus_config = function () {
-        this.page.url = 'https://vincentliu99999.github.io/training/index.html';
-        this.page.identifier = 'training/index.html';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'vincentliu' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-    </div>
-</div>
 </div>
                 
 
@@ -400,25 +550,6 @@
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                文章目錄
-            </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#2019">
-        <span class="has-mr-6">1</span>
-        <span>2019</span>
-        </a></li><li>
-        <a class="is-flex" href="#2018">
-        <span class="has-mr-6">2</span>
-        <span>2018</span>
-        </a></li></ul>
-        </div>
-    </div>
-</div>
-
         
             
 <div class="card widget">
@@ -615,25 +746,6 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                文章目錄
-            </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#2019">
-        <span class="has-mr-6">1</span>
-        <span>2019</span>
-        </a></li><li>
-        <a class="is-flex" href="#2018">
-        <span class="has-mr-6">2</span>
-        <span>2018</span>
-        </a></li></ul>
-        </div>
-    </div>
-</div>
-
     
         
 <div class="card widget">
@@ -830,7 +942,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="教學文件" height="28">
+                    <img src="/images/light-bulb.png" alt="Hexo" height="28">
                 
                 </a>
                 <p class="is-size-7">
