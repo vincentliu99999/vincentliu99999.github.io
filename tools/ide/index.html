@@ -2,30 +2,30 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Git 手冊 - Hexo</title>
+<title>IDE - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="設定指令設定123456789101112131415161718192021222324252627git config --list # git config -l# accountgit config --global user.name &quot;[name]&quot;git config --global user.email &quot;[email address]&quot;# pushgit config --g">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Git 手冊">
-<meta property="og:url" content="https://vincentliu99999.github.io/git-handbook/index.html">
+    <meta name="description" content="Online IDE CodeSandbox 可由 Github 匯入 Repo CodePen JSFiddle: html, css, javascript  DB DB Fiddle">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IDE">
+<meta property="og:url" content="https://vincentliu99999.github.io/tools/ide/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="設定指令設定123456789101112131415161718192021222324252627git config --list # git config -l# accountgit config --global user.name &quot;[name]&quot;git config --global user.email &quot;[email address]&quot;# pushgit config --g">
+<meta property="og:description" content="Online IDE CodeSandbox 可由 Github 匯入 Repo CodePen JSFiddle: html, css, javascript  DB DB Fiddle">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2020-03-07T07:26:41.985Z">
+<meta property="og:updated_time" content="2020-03-07T07:20:32.145Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git 手冊">
-<meta name="twitter:description" content="設定指令設定123456789101112131415161718192021222324252627git config --list # git config -l# accountgit config --global user.name &quot;[name]&quot;git config --global user.email &quot;[email address]&quot;# pushgit config --g">
+<meta name="twitter:title" content="IDE">
+<meta name="twitter:description" content="Online IDE CodeSandbox 可由 Github 匯入 Repo CodePen JSFiddle: html, css, javascript  DB DB Fiddle">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Git 手冊" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="IDE" type="application/atom+xml">
 
 
 
@@ -115,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Git 手冊" height="28">
+                <img src="/images/light-bulb.png" alt="IDE" height="28">
             
             </a>
         </div>
@@ -163,73 +163,19 @@
     
     <div class="card-content article ">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-01T12:18:26.000Z">2019-05-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/handbook/">handbook</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 分鐘 閱讀文 (大約 1156 個字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Git 手冊
+                IDE
             
         </h1>
         <div class="content">
-            <!---
-todo
-
-- [Git Tools](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection)
-- [Github](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
-- [Distributed Git](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
---->
-<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a><a href="https://git-scm.com/docs/git-config" target="_blank" rel="noopener">設定</a></h2><h3 id="指令設定"><a href="#指令設定" class="headerlink" title="指令設定"></a>指令設定</h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">git config --list # git config -l</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> account</span><br><span class="line">git config --global user.name "[name]"</span><br><span class="line">git config --global user.email "[email address]"</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> push</span><br><span class="line">git config --global push.default simple</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> core</span><br><span class="line">git config --global editor vim</span><br><span class="line">git config --global ignoreCase false</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> color</span><br><span class="line">git config --global color.diff auto</span><br><span class="line">git config --global color.status auto</span><br><span class="line">git config --global color.branch auto</span><br><span class="line">git config --global color.log auto</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> alias</span><br><span class="line">git config --global alias.co checkout</span><br><span class="line">git config --global alias.br branch</span><br><span class="line">git config --global alias.aa add --all</span><br><span class="line">git config --global alias.ci commit</span><br><span class="line">git config --global alias.st status</span><br><span class="line">git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'"</span><br><span class="line">git config --global alias.lg "log --graph --pretty=format:'%C(reverse ul cyan)%h%Creset -%C(yellow)%d%Creset %C(ul)%s%Creset %C(dim white)&lt;%an&gt;%Creset %Cgreen(%cr)%Creset %ci'"</span><br></pre></td></tr></table></figure>
-<h3 id="編輯-gitconfig"><a href="#編輯-gitconfig" class="headerlink" title="編輯 ~/.gitconfig"></a>編輯 <code>~/.gitconfig</code></h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[user]</span><br><span class="line">        name = your_user_name</span><br><span class="line">        email = account@domain.com</span><br><span class="line">[core]</span><br><span class="line">        editor = vim</span><br><span class="line">        ignorecase = false</span><br><span class="line">[push]</span><br><span class="line">        default = simple</span><br><span class="line">[color]</span><br><span class="line">        diff = auto</span><br><span class="line">        status = auto</span><br><span class="line">        branch = auto</span><br><span class="line">        log = auto</span><br><span class="line">[alias]</span><br><span class="line">        co = checkout</span><br><span class="line">        br = branch</span><br><span class="line">        aa = add --all</span><br><span class="line">        ci = commit</span><br><span class="line">        st = status</span><br><span class="line">        lg = log --graph --pretty=format:'%C(reverse ul cyan)%h%Creset -%C(yellow)%d%Creset %C(ul)%s%Creset %C(dim white)&lt;%an&gt;%Creset %Cgreen(%cr)%Creset %ci'</span><br></pre></td></tr></table></figure>
-<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><ul>
-<li><code>.gitignore</code> 忽略不需要的檔案</li>
-<li><code>.gitkeep</code> 保留空資料夾</li>
+            <h2 id="Online-IDE"><a href="#Online-IDE" class="headerlink" title="Online IDE"></a>Online IDE</h2><ul>
+<li><a href="https://codesandbox.io/" target="_blank" rel="noopener">CodeSandbox</a> 可由 Github 匯入 Repo</li>
+<li><a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a></li>
+<li><a href="https://jsfiddle.net/" target="_blank" rel="noopener">JSFiddle</a>: html, css, javascript</li>
 </ul>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git status</span><br><span class="line">git status -s</span><br><span class="line"></span><br><span class="line">git add &lt;pathspec&gt;... # 新增特定檔案 to staging: file name, *.extension, folde name</span><br><span class="line">git add . # 新增所有檔案 to staging</span><br><span class="line">git commit -m '[commit messgae]'</span><br><span class="line">git commit -am '[commit messgae]' # 自動 stage 被修改, 刪除的檔案</span><br><span class="line">git commit --amend # 修改最後一次的 commit</span><br><span class="line">git commit --amend -m '[commit messgae]' # modify last commit</span><br><span class="line">git rm &lt;file&gt;...</span><br><span class="line">git rm --cached &lt;file&gt;... # 刪除檔案</span><br><span class="line">git rm --cached -r . # 所有 staging 檔案 to untracked</span><br><span class="line">git mv &lt;file_name_old&gt; &lt;file_name_new&gt; # 重新命名檔案</span><br><span class="line">git mv file_from file_to # git mv &lt;options&gt;... &lt;args&gt;...</span><br><span class="line">git checkout master &lt;file_name&gt; # 從 master 取回檔案</span><br><span class="line"></span><br><span class="line">git diff</span><br><span class="line">git diff --staged # git diff --cached</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 提交空目錄</span><br><span class="line">mkdir img</span><br><span class="line">cd img</span><br><span class="line">touch .gitkeep</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 清除 untrack file or folder</span><br><span class="line">git clean -f</span><br><span class="line">git clean -df</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 查看 log</span><br><span class="line">git show 9083cdc # git show &lt;object&gt;...</span><br><span class="line">git blame wtf.html # git blame index.html</span><br><span class="line">git log</span><br><span class="line">git log --graph --oneline</span><br><span class="line">git log --stat</span><br><span class="line">git log --pretty=oneline</span><br><span class="line">git log -p README.md</span><br><span class="line">git log -p -2</span><br><span class="line">git log --pretty=format:"%h %s" --graph</span><br><span class="line">git log --since=2.weeks</span><br><span class="line">git log -Sfunction_name # git log -S&lt;string&gt; -G&lt;regex&gt;</span><br><span class="line">git log --pretty="%h - %s" --author=gitster --since="2008-10-01" --before="2008-11-01" --no-merges</span><br><span class="line">git reflog # 所有的 local 歷史紀錄，遠端不會有，存放在 ~/.git/logs/refs/</span><br><span class="line">git log -g # reflog 詳細版</span><br><span class="line"></span><br><span class="line">git reset HEAD README.md # Unstageing</span><br><span class="line">git checkout -- README.md # Unmodofying, 修改紀錄會消失！！！！！</span><br><span class="line"></span><br><span class="line">git clone &lt;GIT URL&gt;</span><br><span class="line">git remote -v</span><br><span class="line">git remote add pb &lt;GIT URL&gt;</span><br><span class="line">git fetch pb # git fetch &lt;remote&gt;</span><br><span class="line">git remote show origin</span><br><span class="line">git remote rename pb paul</span><br><span class="line">git remote remove paul</span><br></pre></td></tr></table></figure>
-<h2 id="Git-Branching"><a href="#Git-Branching" class="headerlink" title="Git Branching"></a><a href="Git Branching">Git Branching</a></h2><ul>
-<li>特性：輕量化、快速切換、鼓勵多合併(commit 圖解請參閱 <a href="Git Branching">Git Branching</a>)</li>
-<li>預設分支：<code>master</code></li>
-<li>目前分支的指標： <code>HEAD</code></li>
-</ul>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">git branch -l</span><br><span class="line">git branch -r</span><br><span class="line">git branch -v</span><br><span class="line">git branch -vv</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 建立分支</span><br><span class="line">git branch &lt;newbranchname&gt;</span><br><span class="line">git checkout -b &lt;newbranchname&gt; # 等同 git branch &lt;newbranchname&gt; &amp;&amp; git checkout &lt;newbranchname&gt;</span><br><span class="line"><span class="hljs-meta">#</span> 建立分支 - 針對節點</span><br><span class="line">git branch &lt;newbranchname&gt; &lt;object&gt;</span><br><span class="line">git checkout -b &lt;newbranchname&gt; &lt;object&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 切換分支</span><br><span class="line">git branch &lt;branchname&gt;</span><br><span class="line">git checkout &lt;branchname&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 合併分支</span><br><span class="line">git merge &lt;branchname&gt;</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 刪除分支</span><br><span class="line">git branch -d &lt;branchname&gt; # --delete</span><br><span class="line">git branch -D &lt;branchname&gt; # 強制刪除 --delete --force</span><br><span class="line"></span><br><span class="line">git branch --merged</span><br><span class="line">git branch --no-merged</span><br><span class="line">git branch --no-merged master</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> remote</span><br><span class="line">git ls-remote [remote]</span><br><span class="line">git remote show [remote]</span><br><span class="line">git fetch &lt;remote&gt;</span><br><span class="line">git remote add</span><br><span class="line">git push &lt;remote&gt; &lt;branch&gt;</span><br><span class="line"><span class="hljs-meta">#</span> tracking</span><br><span class="line">git checkout -b &lt;branch&gt; &lt;remote&gt;/&lt;branch&gt; # or git checkout serverfix</span><br><span class="line">git branch -u origin/serverfix</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> pulling</span><br><span class="line">git pull # git fetch &amp;&amp; git merge</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span># delete remote branch</span><br><span class="line">git push origin --delete serverfix</span><br></pre></td></tr></table></figure>
-<h3 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a><a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing" target="_blank" rel="noopener">Rebase</a></h3><p>不要 rebase 其他人正在進行的 branch</p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;branchname&gt;</span><br><span class="line">git rebase master</span><br><span class="line">git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</span><br><span class="line">git pull --rebase</span><br></pre></td></tr></table></figure>
-<h3 id="Git-Branching-Remote"><a href="#Git-Branching-Remote" class="headerlink" title="Git Branching - Remote"></a><a href="https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches" target="_blank" rel="noopener">Git Branching - Remote</a></h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> push</span><br><span class="line">git push origin serverfix</span><br><span class="line">git fetch origin</span><br><span class="line">git checkout -b serverfix origin/serverfix</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> track</span><br><span class="line">git checkout --track origin/serverfix</span><br><span class="line">git checkout serverfix</span><br><span class="line">git checkout -b sf origin/serverfix</span><br><span class="line">git branch -vv</span><br><span class="line">git fetch --all; git branch -vv</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> pull</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> delete</span><br><span class="line">git push origin --delete serverfix</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create empty branch</span><br><span class="line">git checkout --orphan empty-branch</span><br><span class="line">git rm -rf .</span><br><span class="line">git commit --allow-empty -m "root commit"</span><br><span class="line">git push origin empty-branch</span><br></pre></td></tr></table></figure>
-<h2 id="Git-on-the-Server"><a href="#Git-on-the-Server" class="headerlink" title="Git on the Server"></a><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols" target="_blank" rel="noopener">Git on the Server</a></h2><p><a href="https://git.wiki.kernel.org/index.php/GitHosting" target="_blank" rel="noopener">Hosting</a></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> remote 操作</span><br><span class="line">git clone git@github.com:[username]/[repo].git</span><br><span class="line">git push -u</span><br><span class="line">git remote add [name] git@github.com:[username]/[repo].git</span><br><span class="line"></span><br><span class="line">git remote</span><br><span class="line">git remote -v</span><br><span class="line">git remote show origin</span><br><span class="line">git pull [name]</span><br><span class="line">git remote rm [name]</span><br></pre></td></tr></table></figure>
-<h3 id="產生-SSH-Public-Key"><a href="#產生-SSH-Public-Key" class="headerlink" title="產生 SSH Public Key"></a>產生 SSH Public Key</h3><ul>
-<li>ssh-keygen: Linux/macOS 內建、Git for Windows<ul>
-<li>passphrase: 使用 key 時需要密碼就填入(<code>ssh-keygen -o</code> 可防暴力密碼破解)，不需要留空即可</li>
-</ul>
-</li>
-<li><code>id_rsa</code> or <code>id_dsa</code>: private key</li>
-<li><code>id_rsa.pub</code> or <code>id_dsa.pub</code>: public key</li>
-<li><a href="https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener">public key 新增至 Github</a></li>
-</ul>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -b 4096 -C "[email address]"</span><br><span class="line">cat id_rsa.pub</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> 測試 Github public key</span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<h2 id="疑難雜症"><a href="#疑難雜症" class="headerlink" title="疑難雜症"></a>疑難雜症</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> git help &lt;verb&gt;</span><br><span class="line">git help config</span><br></pre></td></tr></table></figure>
-<h3 id="修改歷史紀錄"><a href="#修改歷史紀錄" class="headerlink" title="修改歷史紀錄"></a>修改歷史紀錄</h3><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i &lt;earliercommit&gt;</span><br><span class="line">git commit --amend --author="Author Name &lt;email@address.com&gt;"</span><br><span class="line">git commit --amend -m="message"</span><br><span class="line">git rebase --continue</span><br><span class="line">git push -f</span><br></pre></td></tr></table></figure>
-<p><a href="https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit" target="_blank" rel="noopener">https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit</a></p>
-<h2 id="參考資源"><a href="#參考資源" class="headerlink" title="參考資源"></a>參考資源</h2><ul>
-<li><a href="https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf" target="_blank" rel="noopener">GIT CHEAT SHEET</a></li>
-<li><a href="https://git-scm.com/docs/pretty-formats" target="_blank" rel="noopener">Git - pretty-formats Documentation</a> for log</li>
+<h2 id="DB"><a href="#DB" class="headerlink" title="DB"></a>DB</h2><ul>
+<li><a href="https://www.db-fiddle.com/" target="_blank" rel="noopener">DB Fiddle</a></li>
 </ul>
 
         </div>
@@ -242,27 +188,6 @@ todo
 
 
 
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/ssh-forward-locale-setting/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">SSH 不帶入本機語系設定</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/react-handbook/">
-                <span class="level-item">React 手冊</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
 
 
 
@@ -272,8 +197,8 @@ todo
         
 <script>
     var disqus_config = function () {
-        this.page.url = 'https://vincentliu99999.github.io/git-handbook/';
-        this.page.identifier = 'git-handbook/';
+        this.page.url = 'https://vincentliu99999.github.io/tools/ide/index.html';
+        this.page.identifier = 'tools/ide/index.html';
     };
     (function() {
         var d = document, s = d.createElement('script');  
@@ -481,53 +406,13 @@ todo
                 文章目錄
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#設定">
+        <a class="is-flex" href="#Online-IDE">
         <span class="has-mr-6">1</span>
-        <span>設定</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#指令設定">
-        <span class="has-mr-6">1.1</span>
-        <span>指令設定</span>
+        <span>Online IDE</span>
         </a></li><li>
-        <a class="is-flex" href="#編輯-gitconfig">
-        <span class="has-mr-6">1.2</span>
-        <span>編輯 ~/.gitconfig</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#基本使用">
+        <a class="is-flex" href="#DB">
         <span class="has-mr-6">2</span>
-        <span>基本使用</span>
-        </a></li><li>
-        <a class="is-flex" href="#Git-Branching">
-        <span class="has-mr-6">3</span>
-        <span>Git Branching</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#Rebase">
-        <span class="has-mr-6">3.1</span>
-        <span>Rebase</span>
-        </a></li><li>
-        <a class="is-flex" href="#Git-Branching-Remote">
-        <span class="has-mr-6">3.2</span>
-        <span>Git Branching - Remote</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#Git-on-the-Server">
-        <span class="has-mr-6">4</span>
-        <span>Git on the Server</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#產生-SSH-Public-Key">
-        <span class="has-mr-6">4.1</span>
-        <span>產生 SSH Public Key</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#疑難雜症">
-        <span class="has-mr-6">5</span>
-        <span>疑難雜症</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#修改歷史紀錄">
-        <span class="has-mr-6">5.1</span>
-        <span>修改歷史紀錄</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#參考資源">
-        <span class="has-mr-6">6</span>
-        <span>參考資源</span>
+        <span>DB</span>
         </a></li></ul>
         </div>
     </div>
@@ -736,53 +621,13 @@ todo
                 文章目錄
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#設定">
+        <a class="is-flex" href="#Online-IDE">
         <span class="has-mr-6">1</span>
-        <span>設定</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#指令設定">
-        <span class="has-mr-6">1.1</span>
-        <span>指令設定</span>
+        <span>Online IDE</span>
         </a></li><li>
-        <a class="is-flex" href="#編輯-gitconfig">
-        <span class="has-mr-6">1.2</span>
-        <span>編輯 ~/.gitconfig</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#基本使用">
+        <a class="is-flex" href="#DB">
         <span class="has-mr-6">2</span>
-        <span>基本使用</span>
-        </a></li><li>
-        <a class="is-flex" href="#Git-Branching">
-        <span class="has-mr-6">3</span>
-        <span>Git Branching</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#Rebase">
-        <span class="has-mr-6">3.1</span>
-        <span>Rebase</span>
-        </a></li><li>
-        <a class="is-flex" href="#Git-Branching-Remote">
-        <span class="has-mr-6">3.2</span>
-        <span>Git Branching - Remote</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#Git-on-the-Server">
-        <span class="has-mr-6">4</span>
-        <span>Git on the Server</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#產生-SSH-Public-Key">
-        <span class="has-mr-6">4.1</span>
-        <span>產生 SSH Public Key</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#疑難雜症">
-        <span class="has-mr-6">5</span>
-        <span>疑難雜症</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#修改歷史紀錄">
-        <span class="has-mr-6">5.1</span>
-        <span>修改歷史紀錄</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#參考資源">
-        <span class="has-mr-6">6</span>
-        <span>參考資源</span>
+        <span>DB</span>
         </a></li></ul>
         </div>
     </div>
@@ -984,7 +829,7 @@ todo
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Git 手冊" height="28">
+                    <img src="/images/light-bulb.png" alt="IDE" height="28">
                 
                 </a>
                 <p class="is-size-7">
