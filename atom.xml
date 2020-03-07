@@ -43,7 +43,7 @@
     <link href="https://vincentliu99999.github.io/serverless-aws-handbook/"/>
     <id>https://vincentliu99999.github.io/serverless-aws-handbook/</id>
     <published>2020-01-02T03:10:35.940Z</published>
-    <updated>2020-02-23T06:02:41.961Z</updated>
+    <updated>2020-03-07T08:04:33.353Z</updated>
     
     <summary type="html">
     
@@ -188,30 +188,6 @@ todo
     </summary>
     
       <category term="aws" scheme="https://vincentliu99999.github.io/categories/aws/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown Cheatsheet</title>
-    <link href="https://vincentliu99999.github.io/markdowm-cheatsheet/"/>
-    <id>https://vincentliu99999.github.io/markdowm-cheatsheet/</id>
-    <published>2018-09-11T17:22:02.000Z</published>
-    <updated>2020-03-07T07:26:56.412Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;標題&quot;&gt;&lt;a href=&quot;#標題&quot; class=&quot;headerlink&quot; title=&quot;標題&quot;&gt;&lt;/a&gt;標題&lt;/h2&gt;&lt;figure class=&quot;highlight markdown hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-      <category term="documentation" scheme="https://vincentliu99999.github.io/categories/documentation/"/>
     
     
   </entry>

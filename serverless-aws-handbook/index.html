@@ -16,7 +16,7 @@
 <meta property="og:description" content="整理 serverless 運用 AWS Provider 開發 Lambda 環境準備&amp;amp;介紹 AWS - Installation 安裝 Node.js 安裝 Serverless npm install -g serverless 設定 AWS credentials   AWS - Introduction 協助開發、部署 Lambda 管理 code, infrastructure">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2020-02-23T06:02:41.961Z">
+<meta property="og:updated_time" content="2020-03-07T08:04:33.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="serverless-aws-handbook">
 <meta name="twitter:description" content="整理 serverless 運用 AWS Provider 開發 Lambda 環境準備&amp;amp;介紹 AWS - Installation 安裝 Node.js 安裝 Serverless npm install -g serverless 設定 AWS credentials   AWS - Introduction 協助開發、部署 Lambda 管理 code, infrastructure">
@@ -176,7 +176,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    8 分鐘 閱讀文 (大約 1162 個字)
+                    7 分鐘 閱讀文 (大約 1008 個字)
                 </span>
                 
                 
@@ -214,7 +214,8 @@
 <li><a href="https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/#serverlessyml-reference" target="_blank" rel="noopener">serverless.yml</a> 可用的屬性</li>
 </ul>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p><a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-debugging.html</a></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">npm install serverless -g</span><br><span class="line">sls --version</span><br><span class="line"></span><br><span class="line">sls create --template hello-world</span><br><span class="line"></span><br><span class="line">npm install serverless-offline -D</span><br><span class="line">sls offline</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Invoke</span><br><span class="line"><span class="hljs-meta">#</span> Remote</span><br><span class="line">serverless invoke --function=helloWorld --log</span><br><span class="line">sls invoke -f helloWorld</span><br><span class="line">sls invoke -f getInstanceByTag # You are not authorized to perform this operation.</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Local</span><br><span class="line">serverless invoke local --function=helloWorld --log</span><br><span class="line">sls invoke local -f helloWorld</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> Remove</span><br><span class="line">sls remove</span><br><span class="line">sls remove --stage dev --region us-east-1</span><br></pre></td></tr></table></figure>
+<script src="https://gist.github.com/vincentliu99999/db2544aeca6c0dcada1abaa9c7c94697.js?file=quick-start.sh"></script>
+
 <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a><a href="https://serverless.com/framework/docs/getting-started/" target="_blank" rel="noopener">Install</a></h2><script src="https://gist.github.com/vincentliu99999/db2544aeca6c0dcada1abaa9c7c94697.js?file=install.sh"></script>
 
 <h2 id="User-Guide"><a href="#User-Guide" class="headerlink" title="User Guide"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/" target="_blank" rel="noopener">User Guide</a></h2><h3 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a><a href="https://serverless.com/framework/docs/providers/aws/guide/functions/" target="_blank" rel="noopener">Functions</a></h3><ul>
@@ -303,14 +304,16 @@
 <li>更新 CloudFormation stack</li>
 <li>發布新版的 function</li>
 </ul>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> default stage: dev</span><br><span class="line"><span class="hljs-meta">#</span> speed up option --aws-s3-accelerate</span><br><span class="line">sls deploy --verbose</span><br><span class="line">sls deploy --aws-s3-accelerate --verbose</span><br><span class="line">sls deploy --stage production --region eu-central-1</span><br></pre></td></tr></table></figure>
+<script src="https://gist.github.com/vincentliu99999/db2544aeca6c0dcada1abaa9c7c94697.js?file=deploy.sh"></script>
+
 <h4 id="Deploy-Function"><a href="#Deploy-Function" class="headerlink" title="Deploy Function"></a>Deploy Function</h4><p>因不仰賴 CloudFormation，較為快速</p>
 <ul>
 <li>package function into zip file</li>
 <li>比對檔案 hash, 有不同才會進行 deploy</li>
 <li>zip file 上傳到 CloudFormation stack  指定的 S3 Bucket</li>
 </ul>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serverless deploy function --function helloWorld</span><br></pre></td></tr></table></figure>
+<script src="https://gist.github.com/vincentliu99999/db2544aeca6c0dcada1abaa9c7c94697.js?file=deploy-function.sh"></script>
+
 <h2 id="AWS-Events"><a href="#AWS-Events" class="headerlink" title="AWS Events"></a><a href="https://serverless.com/framework/docs/providers/aws/events/" target="_blank" rel="noopener">AWS Events</a></h2><h3 id="Schedule"><a href="#Schedule" class="headerlink" title="Schedule"></a><a href="https://serverless.com/framework/docs/providers/aws/events/schedule/" target="_blank" rel="noopener">Schedule</a></h3><ul>
 <li>語法可參閱 <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html" target="_blank" rel="noopener">Schedule Expressions for Rules</a><ul>
 <li><code>corn</code></li>
@@ -344,7 +347,8 @@
 </ul>
 <h3 id="Create"><a href="#Create" class="headerlink" title="Create"></a>Create</h3><p><code>nodejs, python, python3, java</code></p>
 <p><a href="https://serverless.com/framework/docs/providers/aws/cli-reference/create/#available-templates" target="_blank" rel="noopener">Templates</a></p>
-<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> create service in current directory</span><br><span class="line">serverless create --template aws-nodejs --name my-special-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create service in new directory</span><br><span class="line">serverless create --template aws-nodejs --path my-new-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create service using local template</span><br><span class="line">serverless create --template-path path/to/my/template/folder --path path/to/my/service --name my-new-service</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> create plugin</span><br><span class="line">serverless create --template plugin</span><br></pre></td></tr></table></figure>
+<script src="https://gist.github.com/vincentliu99999/db2544aeca6c0dcada1abaa9c7c94697.js?file=create-template.sh"></script>
+
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
 <li><a href="https://github.com/serverless/serverless/issues/3323" target="_blank" rel="noopener">Having an event only for prod stage</a></li>
 <li><a href="https://github.com/serverless/examples" target="_blank" rel="noopener">serverless/examples</a></li>
@@ -459,7 +463,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        8
+                        7
                     </p>
                 </div>
             </div>
@@ -469,7 +473,7 @@
                         分類
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        4
                     </p>
                 </div>
             </div>
@@ -524,14 +528,6 @@
             </span>
             <span class="level-end">
                 <span class="level-item tag">2</span>
-            </span>
-        </a></li><li>
-        <a class="level is-marginless" href="/categories/documentation/">
-            <span class="level-start">
-                <span class="level-item">documentation</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/handbook/">
@@ -821,17 +817,6 @@
             </a>
         </li>
         
-        <li>
-            <a class="level is-marginless" href="/archives/2018/09/">
-                <span class="level-start">
-                    <span class="level-item">九月 2018</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
         </ul>
         </div>
     </div>
@@ -1104,17 +1089,6 @@
                 </span>
                 <span class="level-end">
                     <span class="level-item tag">3</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
-            <a class="level is-marginless" href="/archives/2018/09/">
-                <span class="level-start">
-                    <span class="level-item">九月 2018</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
                 </span>
             </a>
         </li>
