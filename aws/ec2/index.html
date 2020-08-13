@@ -2,27 +2,30 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>標籤 - Hexo</title>
+<title>AWS EC2 - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="aws cloudformation ec2,aws,docker container,markdown,SSH,lambda,aws cloudformation">
+    <meta name="description" content="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AccessingInstancesLinux.htmlhttps://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/connection-prereqs.htmlhttps://docs.aws.amazon.com/zh_tw">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://vincentliu99999.github.io/tags/index.html">
+<meta property="og:title" content="AWS EC2">
+<meta property="og:url" content="https://vincentliu99999.github.io/aws/ec2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AccessingInstancesLinux.htmlhttps://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/connection-prereqs.htmlhttps://docs.aws.amazon.com/zh_tw">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2020-08-04T01:31:41.154Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="AWS EC2">
+<meta name="twitter:description" content="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AccessingInstancesLinux.htmlhttps://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/connection-prereqs.htmlhttps://docs.aws.amazon.com/zh_tw">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="AWS EC2" type="application/atom+xml">
 
 
 
@@ -112,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                <img src="/images/light-bulb.png" alt="AWS EC2" height="28">
             
             </a>
         </div>
@@ -130,7 +133,7 @@
                 
                 <a class="navbar-item" href="/training">Training</a>
                 
-                <a class="navbar-item is-active" href="/tags">Tags</a>
+                <a class="navbar-item" href="/tags">Tags</a>
                 
                 <a class="navbar-item" href="/about">About</a>
                 
@@ -138,6 +141,10 @@
             
             <div class="navbar-end">
                 
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
                 
                 
                 <a class="navbar-item search" title="搜尋" href="javascript:;">
@@ -152,39 +159,127 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                標籤
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/SSH/">
-                        <span class="tag">SSH</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/lambda/">
-                        <span class="tag">lambda</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                AWS EC2
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html</a><br><a href="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/connection-prereqs.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/connection-prereqs.html</a><br><a href="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html" target="_blank" rel="noopener">https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html</a></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span> ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name</span><br><span class="line">chmod 400 ~/.ssh/keys/vincentliu.pem</span><br><span class="line"><span class="hljs-meta">#</span> Amazon Linux 2, Amazon Linux AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ec2-user@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ec2-user@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> CentOS AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" centos@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ubuntu@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> Debian AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" admin@ce2-54-144-250-237.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" root@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> Fedora AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ec2-user@ce2-54-144-250-237.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" fedora@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> RHEL AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ec2-user@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" root@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> SUSE AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ec2-user@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" root@ec2-100-26-167-218.compute-1.amazonaws.com</span><br><span class="line"><span class="hljs-meta">#</span> Ubuntu AMI</span><br><span class="line">ssh -v -i "~/.ssh/keys/vincentliu.pem" ubuntu@ec2-100-26-167-218.compute-1.amazonaws.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">debug1: Server host key: ecdsa-sha2-nistp256 SHA256:QKXoY/KtWTju/tacNwXvplOL18GbgwIhKcOgxNBYq9s</span><br><span class="line">The authenticity of host &apos;34.204.201.221 (34.204.201.221)&apos; can&apos;t be established.</span><br><span class="line">ECDSA key fingerprint is SHA256:QKXoY/KtWTju/tacNwXvplOL18GbgwIhKcOgxNBYq9s.</span><br><span class="line">Are you sure you want to continue connecting (yes/no/[fingerprint])? yes</span><br></pre></td></tr></table></figure>
+<h2 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo yum update</span><br><span class="line"></span><br><span class="line">service --status-all | less</span><br><span class="line">service --status-all | grep ntpd</span><br><span class="line">service --status-all | grep ssm</span><br><span class="line">service --status-all | grep agent</span><br><span class="line"></span><br><span class="line">chkconfig --list | less | column -t -s, | less -S</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> port</span><br><span class="line">netstat -tulpn</span><br></pre></td></tr></table></figure>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
+<li>AMI Template: 軟體設定、Server、應用程式</li>
+<li>Instance: 由 Template 啟動的虛擬 Server</li>
+</ul>
+<h2 id="free-tier-AMI"><a href="#free-tier-AMI" class="headerlink" title="free tier AMI"></a>free tier AMI</h2><ul>
+<li>Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type - ami-09d8b5222f2b93bf0</li>
+<li>Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-02354e95b39ca8dec (64-bit x86) / ami-0c5bf07e510b75b11 (64-bit Arm)</li>
+<li>Ubuntu Server 20.04 LTS (HVM), SSD Volume Type - ami-0d57c0143330e1fa7 (64-bit x86) / ami-05f126563b93d66c6 (64-bit Arm)</li>
+<li>Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-0a0ddd875a1ea2c7f (64-bit x86) / ami-0b786a1a999c4e98e (64-bit Arm)</li>
+<li>Ubuntu Server 18.04 LTS (HVM), SSD Volume Type - ami-0ac80df6eff0e70b5 (64-bit x86) / ami-0d221091ef7082bcf (64-bit Arm)</li>
+<li>Red Hat Enterprise Linux 8 (HVM), SSD Volume Type - ami-098f16afa9edf40be (64-bit x86) / ami-029ba835ddd43c34f (64-bit Arm)</li>
+<li>SUSE Linux Enterprise Server 12 SP5 (HVM), SSD Volume Type - ami-095d73d5068ebbc22</li>
+<li>SUSE Linux Enterprise Server 15 SP1 (HVM), SSD Volume Type - ami-0e0fcf63653340b66 (64-bit x86) / ami-05dde7e9c924be7dc (64-bit Arm)</li>
+</ul>
+<h2 id="Security-Group"><a href="#Security-Group" class="headerlink" title="Security Group"></a>Security Group</h2><ul>
+<li>盤點沒在使用的 SG <a href="https://aws.amazon.com/tw/premiumsupport/knowledge-center/ec2-find-security-group-resources/" target="_blank" rel="noopener">Find Resources Associated With an Amazon EC2 Security Group</a> <code>aws ec2 describe-network-interfaces --filters Name=group-id,Values=&lt;group-id&gt; --region &lt;region&gt; --output json</code><ul>
+<li>EC2 Console &gt; Security Group Id</li>
+<li>EC2 Console &gt; Network Interfaces &gt; search Security Group Id</li>
+</ul>
+</li>
+</ul>
+<h2 id="AMI"><a href="#AMI" class="headerlink" title="AMI"></a><a href="https://aws.amazon.com/tw/amazon-linux-ami/" target="_blank" rel="noopener">AMI</a></h2><p><a href="https://aws.amazon.com/tw/blogs/aws/update-on-amazon-linux-ami-end-of-life/" target="_blank" rel="noopener">https://aws.amazon.com/tw/blogs/aws/update-on-amazon-linux-ami-end-of-life/</a></p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/image-id</span><br></pre></td></tr></table></figure>
+<h2 id="User-Data"><a href="#User-Data" class="headerlink" title="User Data"></a>User Data</h2><ul>
+<li>會以 <code>root</code> 身份執行，處理後會存放在 <code>/var/lib/cloud/instances/instance-id/</code></li>
+<li>instance 查看 user data <code>curl http://169.254.169.254/latest/user-data</code></li>
+</ul>
+<p>安裝 SSM Agent： 2017.09 之後的 AMI 已預設安裝，下列僅適用 Intel (x86_64)，給 EC2 的 user data</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#</span>!/bin/bash</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> install SSM Agent</span><br><span class="line">yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> start SSM Agent</span><br><span class="line">start amazon-ssm-agent</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> check status</span><br><span class="line">status amazon-ssm-agent</span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">#</span> using proxy https://docs.aws.amazon.com/zh_tw/systems-manager/latest/userguide/sysman-proxy-with-ssm-agent.html</span><br><span class="line">echo -e "env http_proxy=http://proxy.com:3128\nenv https_proxy=http://proxy.com:3128\nenv no_proxy=169.254.169.254" |  tee /etc/init/amazon-ssm-agent.override</span><br><span class="line"></span><br><span class="line">stop amazon-ssm-agent</span><br><span class="line">start amazon-ssm-agent</span><br></pre></td></tr></table></figure>
+<h2 id="EC2-Auto-Scaling"><a href="#EC2-Auto-Scaling" class="headerlink" title="EC2 Auto Scaling"></a>EC2 Auto Scaling</h2><ul>
+<li><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html#as-component-intro" target="_blank" rel="noopener">Components</a><ul>
+<li>Groups: 一群 EC2，scaling 及管理的單位<ul>
+<li>minimum: 最少數量</li>
+<li>maximum: 最多數量</li>
+<li>desired capacity: 預期數量</li>
+<li>scaling policy: 依照需求</li>
+</ul>
+</li>
+<li>Configuration templates: EC2 instance</li>
+<li>Scaling options<ul>
+<li>手動</li>
+<li>scaling policy</li>
+<li>排程</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Auto-Scaling-Lifecycle"><a href="#Auto-Scaling-Lifecycle" class="headerlink" title="Auto Scaling Lifecycle"></a><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroupLifecycle.html" target="_blank" rel="noopener">Auto Scaling Lifecycle</a></h3><h2 id="EC2-Auto-Scaling-Getting-Started"><a href="#EC2-Auto-Scaling-Getting-Started" class="headerlink" title="EC2 Auto Scaling - Getting Started"></a><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/GettingStartedTutorial.html" target="_blank" rel="noopener">EC2 Auto Scaling - Getting Started</a></h2><ol>
+<li>create a <a href="https://console.aws.amazon.com/ec2/v2/home?#LaunchTemplates:" target="_blank" rel="noopener">launch template</a> for an Auto Scaling group <code>AMI ID</code></li>
+<li>create a <a href="https://console.aws.amazon.com/ec2/autoscaling/home?#LaunchConfigurations:" target="_blank" rel="noopener">launch configuration</a><ul>
+<li>Create <a href="https://console.aws.amazon.com/ec2/autoscaling/home?#AutoScalingGroups:" target="_blank" rel="noopener">Auto Scaling group</a>: Create a new launch configuration</li>
+</ul>
+</li>
+<li>Verify Your Auto Scaling Group</li>
+<li>Terminate an Instance in Your Auto Scaling Group</li>
+<li>Delete Your Scaling Infrastructure<ul>
+<li>delete Auto Scaling group</li>
+<li>delete launch template</li>
+<li>delete launch configuration</li>
+</ul>
+</li>
+</ol>
+<h2 id="Tutorial-Set-Up-a-Scaled-and-Load-Balanced-Application"><a href="#Tutorial-Set-Up-a-Scaled-and-Load-Balanced-Application" class="headerlink" title="Tutorial: Set Up a Scaled and Load-Balanced Application"></a><a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-register-lbs-with-asg.html" target="_blank" rel="noopener">Tutorial: Set Up a Scaled and Load-Balanced Application</a></h2><p>TODO</p>
+<h2 id="Auto-Scaling-Groups"><a href="#Auto-Scaling-Groups" class="headerlink" title="Auto Scaling Groups"></a>Auto Scaling Groups</h2><h3 id="Using-a-Load-Balancer-with-an-Auto-Scaling-Group"><a href="#Using-a-Load-Balancer-with-an-Auto-Scaling-Group" class="headerlink" title="Using a Load Balancer with an Auto Scaling Group"></a>Using a Load Balancer with an Auto Scaling Group</h3><p>ASG 啟動或終止的 instance 會自動由 target group 註冊或取消註冊</p>
+<h2 id="logs"><a href="#logs" class="headerlink" title="logs"></a>logs</h2><ul>
+<li><code>/var/log/cloud-init.log</code></li>
+<li><code>/var/log/cloud-init-output.log</code></li>
+</ul>
+
         </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">評論</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://vincentliu99999.github.io/aws/ec2/index.html';
+        this.page.identifier = 'aws/ec2/index.html';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'vincentliu' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
+</div>
                 
 
 
@@ -361,6 +456,69 @@
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                文章目錄
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#設定">
+        <span class="has-mr-6">1</span>
+        <span>設定</span>
+        </a></li><li>
+        <a class="is-flex" href="#概念">
+        <span class="has-mr-6">2</span>
+        <span>概念</span>
+        </a></li><li>
+        <a class="is-flex" href="#free-tier-AMI">
+        <span class="has-mr-6">3</span>
+        <span>free tier AMI</span>
+        </a></li><li>
+        <a class="is-flex" href="#Security-Group">
+        <span class="has-mr-6">4</span>
+        <span>Security Group</span>
+        </a></li><li>
+        <a class="is-flex" href="#AMI">
+        <span class="has-mr-6">5</span>
+        <span>AMI</span>
+        </a></li><li>
+        <a class="is-flex" href="#User-Data">
+        <span class="has-mr-6">6</span>
+        <span>User Data</span>
+        </a></li><li>
+        <a class="is-flex" href="#EC2-Auto-Scaling">
+        <span class="has-mr-6">7</span>
+        <span>EC2 Auto Scaling</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Auto-Scaling-Lifecycle">
+        <span class="has-mr-6">7.1</span>
+        <span>Auto Scaling Lifecycle</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#EC2-Auto-Scaling-Getting-Started">
+        <span class="has-mr-6">8</span>
+        <span>EC2 Auto Scaling - Getting Started</span>
+        </a></li><li>
+        <a class="is-flex" href="#Tutorial-Set-Up-a-Scaled-and-Load-Balanced-Application">
+        <span class="has-mr-6">9</span>
+        <span>Tutorial: Set Up a Scaled and Load-Balanced Application</span>
+        </a></li><li>
+        <a class="is-flex" href="#Auto-Scaling-Groups">
+        <span class="has-mr-6">10</span>
+        <span>Auto Scaling Groups</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Using-a-Load-Balancer-with-an-Auto-Scaling-Group">
+        <span class="has-mr-6">10.1</span>
+        <span>Using a Load Balancer with an Auto Scaling Group</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#logs">
+        <span class="has-mr-6">11</span>
+        <span>logs</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
         
             
 <div class="card widget">
@@ -546,6 +704,69 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                文章目錄
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#設定">
+        <span class="has-mr-6">1</span>
+        <span>設定</span>
+        </a></li><li>
+        <a class="is-flex" href="#概念">
+        <span class="has-mr-6">2</span>
+        <span>概念</span>
+        </a></li><li>
+        <a class="is-flex" href="#free-tier-AMI">
+        <span class="has-mr-6">3</span>
+        <span>free tier AMI</span>
+        </a></li><li>
+        <a class="is-flex" href="#Security-Group">
+        <span class="has-mr-6">4</span>
+        <span>Security Group</span>
+        </a></li><li>
+        <a class="is-flex" href="#AMI">
+        <span class="has-mr-6">5</span>
+        <span>AMI</span>
+        </a></li><li>
+        <a class="is-flex" href="#User-Data">
+        <span class="has-mr-6">6</span>
+        <span>User Data</span>
+        </a></li><li>
+        <a class="is-flex" href="#EC2-Auto-Scaling">
+        <span class="has-mr-6">7</span>
+        <span>EC2 Auto Scaling</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Auto-Scaling-Lifecycle">
+        <span class="has-mr-6">7.1</span>
+        <span>Auto Scaling Lifecycle</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#EC2-Auto-Scaling-Getting-Started">
+        <span class="has-mr-6">8</span>
+        <span>EC2 Auto Scaling - Getting Started</span>
+        </a></li><li>
+        <a class="is-flex" href="#Tutorial-Set-Up-a-Scaled-and-Load-Balanced-Application">
+        <span class="has-mr-6">9</span>
+        <span>Tutorial: Set Up a Scaled and Load-Balanced Application</span>
+        </a></li><li>
+        <a class="is-flex" href="#Auto-Scaling-Groups">
+        <span class="has-mr-6">10</span>
+        <span>Auto Scaling Groups</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Using-a-Load-Balancer-with-an-Auto-Scaling-Group">
+        <span class="has-mr-6">10.1</span>
+        <span>Using a Load Balancer with an Auto Scaling Group</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#logs">
+        <span class="has-mr-6">11</span>
+        <span>logs</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 <div class="card widget">
@@ -731,7 +952,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                    <img src="/images/light-bulb.png" alt="AWS EC2" height="28">
                 
                 </a>
                 <p class="is-size-7">

@@ -2,27 +2,30 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>標籤 - Hexo</title>
+<title>Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="aws cloudformation ec2,aws,docker container,markdown,SSH,lambda,aws cloudformation">
+    <meta name="description" content="CodeDeployLog agent log: /var/log/aws/codedeploy-agent/codedeploy-agent.log agent install, update log: /tmp/codedeploy-agent.update.log deployment log: /opt/codedeploy-agent/deployment-root/deployment">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://vincentliu99999.github.io/tags/index.html">
+<meta property="og:url" content="https://vincentliu99999.github.io/aws/codedeploy/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CodeDeployLog agent log: /var/log/aws/codedeploy-agent/codedeploy-agent.log agent install, update log: /tmp/codedeploy-agent.update.log deployment log: /opt/codedeploy-agent/deployment-root/deployment">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2020-03-17T10:22:54.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="CodeDeployLog agent log: /var/log/aws/codedeploy-agent/codedeploy-agent.log agent install, update log: /tmp/codedeploy-agent.update.log deployment log: /opt/codedeploy-agent/deployment-root/deployment">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title type="application/atom+xml">
 
 
 
@@ -112,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                <img src="/images/light-bulb.png" alt height="28">
             
             </a>
         </div>
@@ -130,7 +133,7 @@
                 
                 <a class="navbar-item" href="/training">Training</a>
                 
-                <a class="navbar-item is-active" href="/tags">Tags</a>
+                <a class="navbar-item" href="/tags">Tags</a>
                 
                 <a class="navbar-item" href="/about">About</a>
                 
@@ -152,39 +155,62 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                標籤
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
                 
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/SSH/">
-                        <span class="tag">SSH</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/lambda/">
-                        <span class="tag">lambda</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
+            
+        </h1>
+        <div class="content">
+            <h1 id="CodeDeploy"><a href="#CodeDeploy" class="headerlink" title="CodeDeploy"></a>CodeDeploy</h1><h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><ul>
+<li>agent log: <code>/var/log/aws/codedeploy-agent/codedeploy-agent.log</code></li>
+<li>agent install, update log: <code>/tmp/codedeploy-agent.update.log</code></li>
+<li>deployment log: <code>/opt/codedeploy-agent/deployment-root/deployment-logs/codedeploy-agent-deployments.log</code></li>
+<li>Appspec script log: <code>/opt/codedeploy-agent/deployment-root/deployment-group-ID/deployment-ID/logs/scripts.log</code></li>
+</ul>
+<h2 id="scripts"><a href="#scripts" class="headerlink" title="scripts"></a>scripts</h2><p>前一次 depolyment script 失敗時使用</p>
+<figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/codedeploy-agent/deployment-root/</span><br><span class="line">rm -rf *</span><br><span class="line"></span><br><span class="line">less /opt/codedeploy-agent/deployment-root/deployment-logs/codedeploy-agent-deployments.log</span><br></pre></td></tr></table></figure>
+
         </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">評論</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://vincentliu99999.github.io/aws/codedeploy/index.html';
+        this.page.identifier = 'aws/codedeploy/index.html';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'vincentliu' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
+</div>
                 
 
 
@@ -731,7 +757,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                    <img src="/images/light-bulb.png" alt height="28">
                 
                 </a>
                 <p class="is-size-7">

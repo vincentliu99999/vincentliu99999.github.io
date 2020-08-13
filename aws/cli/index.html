@@ -2,27 +2,30 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>標籤 - Hexo</title>
+<title>AWS CLI - Hexo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="keywords" content="aws cloudformation ec2,aws,docker container,markdown,SSH,lambda,aws cloudformation">
+    <meta name="description" content="https://aws.amazon.com/tw/cli/ 設定來源  CLI 環境變數 CLI 設定檔 Shared Credential 設定檔  設定檔預設位於 ~/.aws/config Credentials 環境變數 Shared Credential File CLI 設定檔  Shared Credentials File設定檔預設位於 ~/.aws/credentials，格式">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://vincentliu99999.github.io/tags/index.html">
+<meta property="og:title" content="AWS CLI">
+<meta property="og:url" content="https://vincentliu99999.github.io/aws/cli/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="https://aws.amazon.com/tw/cli/ 設定來源  CLI 環境變數 CLI 設定檔 Shared Credential 設定檔  設定檔預設位於 ~/.aws/config Credentials 環境變數 Shared Credential File CLI 設定檔  Shared Credentials File設定檔預設位於 ~/.aws/credentials，格式">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://vincentliu99999.github.io/images/og_image.png">
+<meta property="og:updated_time" content="2020-08-05T10:38:05.821Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="AWS CLI">
+<meta name="twitter:description" content="https://aws.amazon.com/tw/cli/ 設定來源  CLI 環境變數 CLI 設定檔 Shared Credential 設定檔  設定檔預設位於 ~/.aws/config Credentials 環境變數 Shared Credential File CLI 設定檔  Shared Credentials File設定檔預設位於 ~/.aws/credentials，格式">
 <meta name="twitter:image" content="https://vincentliu99999.github.io/images/og_image.png">
 
 
 
 
 
-<link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<link rel="alternative" href="/atom.xml" title="AWS CLI" type="application/atom+xml">
 
 
 
@@ -112,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                <img src="/images/light-bulb.png" alt="AWS CLI" height="28">
             
             </a>
         </div>
@@ -130,7 +133,7 @@
                 
                 <a class="navbar-item" href="/training">Training</a>
                 
-                <a class="navbar-item is-active" href="/tags">Tags</a>
+                <a class="navbar-item" href="/tags">Tags</a>
                 
                 <a class="navbar-item" href="/about">About</a>
                 
@@ -138,6 +141,10 @@
             
             <div class="navbar-end">
                 
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="文章目錄" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
                 
                 
                 <a class="navbar-item search" title="搜尋" href="javascript:;">
@@ -152,39 +159,73 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card widget">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                標籤
-            </h3>
-            <div class="field is-grouped is-grouped-multiline">
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/SSH/">
-                        <span class="tag">SSH</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/lambda/">
-                        <span class="tag">lambda</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/markdown/">
-                        <span class="tag">markdown</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-            </div>
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                AWS CLI
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://aws.amazon.com/tw/cli/" target="_blank" rel="noopener">https://aws.amazon.com/tw/cli/</a></p>
+<p>設定來源</p>
+<ul>
+<li>CLI</li>
+<li>環境變數</li>
+<li>CLI 設定檔</li>
+<li>Shared Credential 設定檔</li>
+</ul>
+<p>設定檔預設位於 <code>~/.aws/config</code></p>
+<h2 id="Credentials"><a href="#Credentials" class="headerlink" title="Credentials"></a>Credentials</h2><ul>
+<li>環境變數</li>
+<li>Shared Credential File</li>
+<li>CLI 設定檔</li>
+</ul>
+<h2 id="Shared-Credentials-File"><a href="#Shared-Credentials-File" class="headerlink" title="Shared Credentials File"></a>Shared Credentials File</h2><p>設定檔預設位於 <code>~/.aws/credentials</code>，格式為 INI，僅能設定 <code>aws_access_key_id</code>, <code>aws_secret_access_key</code>, <code>aws_session_token</code></p>
+<h2 id="IAM"><a href="#IAM" class="headerlink" title="IAM"></a>IAM</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aws iam list-instance-profiles --profile vincentliu</span><br><span class="line">aws iam delete-instance-profile --instance-profile-name instance-profile-name --profile vincentliu</span><br></pre></td></tr></table></figure>
+<h2 id="EC2"><a href="#EC2" class="headerlink" title="EC2"></a>EC2</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">aws ec2 describe-instances \</span><br><span class="line">  --instance-ids i-0ca536f88d5672bfb i-0876decb55371d4eb \</span><br><span class="line">  --profile VincentLiu</span><br></pre></td></tr></table></figure>
+<h2 id="CodeDeploy"><a href="#CodeDeploy" class="headerlink" title="CodeDeploy"></a>CodeDeploy</h2><figure class="highlight shell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">aws deploy list-applications</span><br><span class="line"></span><br><span class="line">aws deploy list-application-revisions --application-name freebird-node</span><br><span class="line">aws deploy get-application --application-name freebird-node</span><br><span class="line"></span><br><span class="line">aws deploy get-deployment-group \</span><br><span class="line">    --application-name freebird-node \</span><br><span class="line">    --deployment-group-name develop</span><br></pre></td></tr></table></figure>
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html" target="_blank" rel="noopener">Command Complete</a></p>
+
         </div>
+        
+        
+        
     </div>
-</div></div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">評論</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://vincentliu99999.github.io/aws/cli/index.html';
+        this.page.identifier = 'aws/cli/index.html';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'vincentliu' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
+</div>
                 
 
 
@@ -361,6 +402,41 @@
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                文章目錄
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Credentials">
+        <span class="has-mr-6">1</span>
+        <span>Credentials</span>
+        </a></li><li>
+        <a class="is-flex" href="#Shared-Credentials-File">
+        <span class="has-mr-6">2</span>
+        <span>Shared Credentials File</span>
+        </a></li><li>
+        <a class="is-flex" href="#IAM">
+        <span class="has-mr-6">3</span>
+        <span>IAM</span>
+        </a></li><li>
+        <a class="is-flex" href="#EC2">
+        <span class="has-mr-6">4</span>
+        <span>EC2</span>
+        </a></li><li>
+        <a class="is-flex" href="#CodeDeploy">
+        <span class="has-mr-6">5</span>
+        <span>CodeDeploy</span>
+        </a></li><li>
+        <a class="is-flex" href="#Note">
+        <span class="has-mr-6">6</span>
+        <span>Note</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
         
             
 <div class="card widget">
@@ -546,6 +622,41 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                文章目錄
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Credentials">
+        <span class="has-mr-6">1</span>
+        <span>Credentials</span>
+        </a></li><li>
+        <a class="is-flex" href="#Shared-Credentials-File">
+        <span class="has-mr-6">2</span>
+        <span>Shared Credentials File</span>
+        </a></li><li>
+        <a class="is-flex" href="#IAM">
+        <span class="has-mr-6">3</span>
+        <span>IAM</span>
+        </a></li><li>
+        <a class="is-flex" href="#EC2">
+        <span class="has-mr-6">4</span>
+        <span>EC2</span>
+        </a></li><li>
+        <a class="is-flex" href="#CodeDeploy">
+        <span class="has-mr-6">5</span>
+        <span>CodeDeploy</span>
+        </a></li><li>
+        <a class="is-flex" href="#Note">
+        <span class="has-mr-6">6</span>
+        <span>Note</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 <div class="card widget">
@@ -731,7 +842,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/light-bulb.png" alt="Hexo" height="28">
+                    <img src="/images/light-bulb.png" alt="AWS CLI" height="28">
                 
                 </a>
                 <p class="is-size-7">
